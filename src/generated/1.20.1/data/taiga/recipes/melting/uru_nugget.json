@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/uru"
+  },
+  "result": {
+    "fluid": "taiga:molten_uru",
+    "amount": 10
+  },
+  "temperature": 1200,
+  "time": 20
+}

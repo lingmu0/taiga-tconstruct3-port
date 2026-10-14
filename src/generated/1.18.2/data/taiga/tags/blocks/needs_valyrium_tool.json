@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "taiga:nihilite_block",
+    "taiga:nucleum_block",
+    "taiga:uru_block",
+    "taiga:uru_ore",
+    "taiga:valyrium_block",
+    "taiga:valyrium_ore"
+  ]
+}

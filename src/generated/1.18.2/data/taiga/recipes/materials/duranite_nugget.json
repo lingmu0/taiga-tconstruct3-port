@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:duranite_nugget"
+  },
+  "material": "taiga:duranite",
+  "value": 1,
+  "needed": 9
+}

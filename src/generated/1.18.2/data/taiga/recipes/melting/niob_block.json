@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:niob_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_niob",
+    "amount": 810
+  },
+  "temperature": 550,
+  "time": 180
+}

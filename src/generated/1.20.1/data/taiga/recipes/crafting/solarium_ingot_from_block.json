@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:solarium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:solarium_ingot",
+    "count": 9
+  }
+}

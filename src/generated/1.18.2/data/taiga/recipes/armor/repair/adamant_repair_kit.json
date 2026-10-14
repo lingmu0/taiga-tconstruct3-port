@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:adamant_helmet"
+    },
+    {
+      "item": "taiga:adamant_chestplate"
+    },
+    {
+      "item": "taiga:adamant_leggings"
+    },
+    {
+      "item": "taiga:adamant_boots"
+    }
+  ],
+  "repair_material": "taiga:adamant"
+}

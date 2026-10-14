@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:valyrium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_valyrium",
+    "amount": 180
+  },
+  "temperature": 1500,
+  "time": 120,
+  "rate": "metal"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:niob_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:niob_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "taiga:ignitz_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "taiga:armor/building/ignitz_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_material",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "taiga:armor/building/ignitz_helmet",
+      "taiga:armor/building/ignitz_chestplate",
+      "taiga:armor/building/ignitz_leggings",
+      "taiga:armor/building/ignitz_boots"
+    ]
+  }
+}

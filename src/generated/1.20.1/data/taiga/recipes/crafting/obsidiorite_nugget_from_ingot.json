@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:obsidiorite_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:obsidiorite_nugget",
+    "count": 9
+  }
+}

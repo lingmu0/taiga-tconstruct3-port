@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:nucleum_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:nucleum_nugget",
+    "count": 9
+  }
+}

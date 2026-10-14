@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:lumix_helmet"
+    },
+    {
+      "item": "taiga:lumix_chestplate"
+    },
+    {
+      "item": "taiga:lumix_leggings"
+    },
+    {
+      "item": "taiga:lumix_boots"
+    }
+  ],
+  "repair_material": "taiga:lumix"
+}

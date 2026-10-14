@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/iox"
+  },
+  "result": {
+    "fluid": "taiga:molten_iox",
+    "amount": 90
+  },
+  "temperature": 900,
+  "time": 60
+}

@@ -1,0 +1,371 @@
+# TAIGA runtime trait tuning / 词条运行时配置
+# Copy to defaultconfigs/taiga-traits.toml before creating a world, or edit <world>/serverconfig/taiga-traits.toml.
+# Server config is synchronized to clients. 20 ticks = 1 second; 1 health = half a heart.
+# 工具耐久/槽位等重建属性修改后请重启世界；服务端配置自动同步客户端。
+
+[tools.analysing]
+# 护甲值转换为额外伤害的比例 / Range: 0 ~ 10
+armorDamageRatio = 0.1
+# 每级额外伤害上限 / Range: 0 ~ 1000
+damageCapPerLevel = 5.0
+# 每级采矿经验触发概率 / Range: 0 ~ 1
+miningXpChancePerLevel = 0.1
+# 触发时额外经验 / Range: 0 ~ 1000
+miningXp = 1
+
+[tools.arcane]
+# 每级增加的升级槽 / Range: 0 ~ 10
+slotsPerLevel = 1
+
+[tools.berserk]
+# 每级在生命完全损失时的伤害倍率增量 / Range: 0 ~ 10
+damagePerMissingHealth = 0.4
+
+[tools.blind]
+# 每级致盲概率 / Range: 0 ~ 1
+chancePerLevel = 0.15
+# 致盲时间（刻） / Range: 0 ~ 72000
+durationTicks = 60
+# 效果等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.bright]
+# 光明触发最低亮度 / Range: 0 ~ 15
+minimumLight = 12
+# 每级挖掘速度增量 / Range: 0 ~ 10
+miningBonusPerLevel = 0.2
+# 夜视时间（刻） / Range: 0 ~ 72000
+nightVisionTicks = 240
+
+[tools.cascade]
+# 采掘连锁层数上限 / Range: 1 ~ 1000
+maximumChain = 10
+# 每层连锁每级的速度增量 / Range: 0 ~ 10
+bonusPerChainLevel = 0.03
+# 连锁重置间隔（刻） / Range: 0 ~ 72000
+resetTicks = 60
+
+[tools.catcher]
+# 缓慢基础时间（刻） / Range: 0 ~ 72000
+baseTicks = 40
+# 每级追加时间（刻） / Range: 0 ~ 72000
+ticksPerLevel = 20
+# 缓慢效果等级，0为I / Range: 0 ~ 10
+amplifier = 1
+
+[tools.congenial]
+# 和谐触发最低生命比例 / Range: 0 ~ 1
+minimumHealthRatio = 0.9
+# 每级伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.15
+
+[tools.crushing]
+# 碾压伤害触发最低目标生命比例 / Range: 0 ~ 1
+targetHealthRatio = 0.8
+# 每级伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.2
+# 每级原矿增产概率 / Range: 0 ~ 1
+oreChancePerLevel = 0.1
+# 原矿增产概率上限 / Range: 0 ~ 1
+oreChanceCap = 0.5
+# 每级追加原矿数 / Range: 0 ~ 64
+extraDropsPerLevel = 1
+
+[tools.cursed]
+# 诅咒触发概率 / Range: 0 ~ 1
+chance = 0.05
+# 虚弱时间（刻） / Range: 0 ~ 72000
+durationTicks = 60
+# 虚弱等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.curvature]
+# 每级对末影人的伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.3
+
+[tools.dark]
+# 黑暗触发亮度上限，不含本值 / Range: 0 ~ 16
+maximumLightExclusive = 8
+# 每级挖掘速度增量 / Range: 0 ~ 10
+miningBonusPerLevel = 0.2
+# 夜视时间（刻） / Range: 0 ~ 72000
+nightVisionTicks = 240
+
+[tools.decay]
+# 每级凋零触发概率 / Range: 0 ~ 1
+chancePerLevel = 0.15
+# 凋零时间（刻） / Range: 0 ~ 72000
+durationTicks = 60
+# 凋零等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.diffuse]
+# 生物经验倍率 / Range: 0 ~ 100
+experienceMultiplier = 1.5
+# 每组掉落物消失概率 / Range: 0 ~ 1
+dropLossChance = 0.35
+
+[tools.dissolving]
+# 经验随机整数倍率上限（下限为0） / Range: 0 ~ 100
+maximumMultiplier = 4
+# 单次经验上限 / Range: 0 ~ 1000000
+experienceCap = 10000
+
+[tools.fracture]
+# 完全磨损时每级伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.2
+# 完全磨损时每级挖掘速度增量 / Range: 0 ~ 10
+miningBonusPerLevel = 0.25
+
+[tools.fragile]
+# 每级耐久乘数 / Range: 0.01 ~ 10
+durabilityMultiplierPerLevel = 0.85
+# 每级额外伤害 / Range: 0 ~ 1000
+damagePerLevel = 1.0
+# 每级额外磨损概率 / Range: 0 ~ 1
+extraWearChancePerLevel = 0.15
+# 额外磨损概率上限 / Range: 0 ~ 1
+extraWearChanceCap = 0.5
+# 额外磨损耐久 / Range: 0 ~ 1000
+extraWear = 1
+
+[tools.garishly]
+# 每级对免疫火焰目标的伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.2
+
+[tools.glimmer]
+# 发光基础时间（刻） / Range: 0 ~ 72000
+glowBaseTicks = 80
+# 每级发光追加时间（刻） / Range: 0 ~ 72000
+glowTicksPerLevel = 20
+# 采矿夜视时间（刻） / Range: 0 ~ 72000
+miningNightVisionTicks = 240
+
+[tools.heroic]
+# 每级对敌对生物的伤害倍率增量 / Range: 0 ~ 10
+damageBonusPerLevel = 0.15
+
+[tools.hollow]
+# 每级耐久乘数 / Range: 0.01 ~ 10
+durabilityMultiplierPerLevel = 0.8
+# 每级攻速增量 / Range: 0 ~ 10
+attackSpeedBonusPerLevel = 0.15
+
+[tools.melting]
+# 点燃基础时间（秒） / Range: 0 ~ 3600
+fireBaseSeconds = 2
+# 每级追加点燃时间（秒） / Range: 0 ~ 3600
+fireSecondsPerLevel = 1
+# 每级熔炼掉落概率 / Range: 0 ~ 1
+smeltingChancePerLevel = 0.2
+
+[tools.mutate]
+# 每级突变概率 / Range: 0 ~ 1
+chancePerLevel = 0.2
+# 触发时选中中毒而非虚弱的概率 / Range: 0 ~ 1
+poisonChance = 0.5
+# 效果时间（刻） / Range: 0 ~ 72000
+durationTicks = 80
+# 效果等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.naturebound]
+# 每级每次修复耐久 / Range: 0 ~ 1000
+repairPerLevel = 1
+# 修复检查间隔（刻） / Range: 1 ~ 72000
+intervalTicks = 40
+
+[tools.ported]
+# 传送最大距离（格） / Range: 2 ~ 64
+distance = 10
+# 传送耐久消耗 / Range: 0 ~ 10000
+durabilityCost = 20
+# 传送冷却（刻） / Range: 0 ~ 72000
+cooldownTicks = 200
+
+[tools.pulverizing]
+# 每组掉落转为下一种矿物的概率 / Range: 0 ~ 1
+conversionChance = 1.0
+
+[tools.resonance]
+# 每级击退增量 / Range: 0 ~ 10
+knockbackPerLevel = 0.15
+# 抗性提升时间（刻） / Range: 0 ~ 72000
+resistanceTicks = 40
+# 抗性等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.reviving]
+# 每级击杀恢复生命 / Range: 0 ~ 1000
+healPerLevel = 2.0
+# 每级击杀修复最大耐久比例 / Range: 0 ~ 1
+repairRatioPerLevel = 0.01
+# 每级最低修复耐久 / Range: 0 ~ 1000
+minimumRepair = 1
+
+[tools.slaughtering]
+# 每级额外抢夺等级 / Range: 0 ~ 10
+lootingPerLevel = 1
+
+[tools.softy]
+# 每级伤害乘数 / Range: 0 ~ 10
+damageMultiplierPerLevel = 0.9
+# 每级挖掘速度增量 / Range: 0 ~ 10
+miningBonusPerLevel = 0.1
+
+[tools.souleater]
+# 每级永久伤害上限 / Range: 0 ~ 1000
+damageCapPerLevel = 20.0
+# 每次击杀伤害成长上限 / Range: 0 ~ 1000
+gainPerKillCap = 0.25
+# 敌人最大生命除以此值作为成长量 / Range: 0.01 ~ 1000000
+healthDivisor = 400.0
+
+[tools.superheavy]
+# 每级额外伤害 / Range: 0 ~ 1000
+damagePerLevel = 1.5
+# 每级攻速乘数 / Range: 0.01 ~ 10
+attackSpeedMultiplierPerLevel = 0.85
+# 每级采掘速度惩罚 / Range: 0 ~ 1
+miningPenaltyPerLevel = 0.1
+# 采掘速度惩罚上限 / Range: 0 ~ 1
+miningPenaltyCap = 0.4
+
+[tools.tantrum]
+# 伤害随机倍率下限 / Range: 0 ~ 100
+minimumDamageMultiplier = 0.85
+# 伤害随机倍率上限，低于下限时按下限处理 / Range: 0 ~ 100
+maximumDamageMultiplier = 1.35
+# 力量触发概率 / Range: 0 ~ 1
+strengthChance = 0.15
+# 力量时间（刻） / Range: 0 ~ 72000
+strengthTicks = 40
+# 力量等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.unstable]
+# 伤害随机倍率下限 / Range: 0 ~ 100
+minimumDamageMultiplier = 0.75
+# 伤害随机倍率上限，低于下限时按下限处理 / Range: 0 ~ 100
+maximumDamageMultiplier = 1.25
+
+[tools.whirl]
+# 每级击退增量 / Range: 0 ~ 10
+knockbackPerLevel = 0.25
+# 速度效果时间（刻） / Range: 0 ~ 72000
+speedTicks = 40
+# 速度等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[tools.taiga_alien]
+# 每级耐久倍率增量 / Range: 0 ~ 10
+durabilityBonusPerLevel = 0.1
+# 每级额外采掘速度 / Range: 0 ~ 100
+miningSpeedPerLevel = 0.5
+
+[tools.taiga_crumbling]
+# 每级采掘速度增量 / Range: 0 ~ 10
+miningBonusPerLevel = 0.15
+
+[tool_rules]
+# 光明和黑暗夜视检查间隔（刻） / Range: 1 ~ 72000
+nightVisionCheckTicks = 40
+
+[armor_rules]
+# 全身穿戴效果的同词条等级上限 / Range: 1 ~ 64
+maximumTotalLevel = 4
+# 单件坚固、符文槽和光合的等级上限 / Range: 1 ~ 64
+maximumPieceLevel = 2
+# TAIGA盔甲额外减伤合计上限 / Range: 0 ~ 1
+maximumDamageReduction = 0.3
+
+[armor.bulwark]
+# 每总等级近战减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.03
+
+[armor.heat_guard]
+# 每总等级火焰和熔岩减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.04
+
+[armor.deflection]
+# 每总等级弹射物减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.04
+
+[armor.anchor]
+# 每总等级击退抗性增量 / Range: 0 ~ 1
+knockbackPerLevel = 0.04
+# 每总等级移动速度惩罚 / Range: 0 ~ 1
+speedPenaltyPerLevel = 0.01
+
+[armor.lightweight]
+# 每总等级移动速度增量 / Range: 0 ~ 10
+speedBonusPerLevel = 0.02
+
+[armor.cushion]
+# 每总等级摔落减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.06
+
+[armor.last_stand]
+# 生命比例低于此值触发 / Range: 0 ~ 1
+healthThreshold = 0.4
+# 每总等级减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.03
+
+[armor.reactive]
+# 每总等级反伤 / Range: 0 ~ 1000
+damagePerLevel = 0.5
+# 反伤共享冷却（刻） / Range: 0 ~ 72000
+cooldownTicks = 20
+
+[armor.venom]
+# 每总等级中毒触发概率 / Range: 0 ~ 1
+chancePerLevel = 0.15
+# 毒棘共享冷却（刻） / Range: 0 ~ 72000
+cooldownTicks = 80
+# 中毒时间（刻） / Range: 0 ~ 72000
+durationTicks = 60
+# 中毒等级，0为I / Range: 0 ~ 10
+amplifier = 0
+
+[armor.radiant]
+# 夜视时间（刻），每秒刷新 / Range: 0 ~ 72000
+nightVisionTicks = 220
+
+[armor.natural]
+# 每级每次修复本件耐久 / Range: 0 ~ 1000
+repairPerLevel = 1
+# 修复间隔（刻），每秒检查，向上取整到检查时机 / Range: 20 ~ 72000
+intervalTicks = 100
+
+[armor.renewal]
+# 每总等级击杀恢复生命 / Range: 0 ~ 1000
+healPerLevel = 0.5
+# 生息共享冷却（刻） / Range: 0 ~ 72000
+cooldownTicks = 100
+
+[armor.aquatic]
+# 每总等级每秒补回氧气 / Range: 0 ~ 300
+airPerLevelPerSecond = 4
+
+[armor.vitality]
+# 每总等级生命上限增量 / Range: 0 ~ 1000
+healthPerLevel = 1.0
+
+[armor.reinforced]
+# 单件每级耐久增量 / Range: 0 ~ 10
+durabilityBonusPerLevel = 0.1
+
+[armor.volatile]
+# 每总等级随机减伤上限 / Range: 0 ~ 1
+maximumReductionPerLevel = 0.03
+
+[armor.arcane]
+# 单件每级增加升级槽 / Range: 0 ~ 10
+slotsPerLevel = 1
+
+[armor.composed]
+# 生命比例达到此值触发 / Range: 0 ~ 1
+healthThreshold = 0.9
+# 每总等级减伤 / Range: 0 ~ 1
+reductionPerLevel = 0.03
+

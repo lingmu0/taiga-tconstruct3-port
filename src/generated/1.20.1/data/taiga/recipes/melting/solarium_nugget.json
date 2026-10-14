@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/solarium"
+  },
+  "result": {
+    "fluid": "taiga:molten_solarium",
+    "amount": 10
+  },
+  "temperature": 1500,
+  "time": 20
+}

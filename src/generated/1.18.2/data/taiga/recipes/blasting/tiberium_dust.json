@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:tiberium_dust"
+  },
+  "result": "taiga:tiberium_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

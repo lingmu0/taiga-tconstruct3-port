@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/vibranium"
+  },
+  "result": {
+    "fluid": "taiga:molten_vibranium",
+    "amount": 90
+  },
+  "temperature": 1500,
+  "time": 60
+}

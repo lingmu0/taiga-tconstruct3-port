@@ -1,0 +1,14 @@
+.gradle/
+**/build/
+**/run/
+tools/__pycache__/
+.deps/
+release/
+**/.gradle/
+**/__pycache__/
+*.local.json
+*.local.toml
+.env
+.env.*
+.idea/
+*.iml

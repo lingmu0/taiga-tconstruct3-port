@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "base": {
+      "tconstruct:durability": 180,
+      "tconstruct:armor": 4,
+      "tconstruct:armor_toughness": 0.0,
+      "tconstruct:knockback_resistance": 0.0
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.4
+    }
+  },
+  "slots": {
+    "upgrades": 2,
+    "defense": 3,
+    "abilities": 1
+  },
+  "traits": [
+    {
+      "name": "taiga:armor_bulwark",
+      "level": 1
+    },
+    {
+      "name": "taiga:armor_cushion",
+      "level": 1
+    }
+  ]
+}

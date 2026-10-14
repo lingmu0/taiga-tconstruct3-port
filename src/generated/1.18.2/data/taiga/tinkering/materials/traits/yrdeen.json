@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:naturebound",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

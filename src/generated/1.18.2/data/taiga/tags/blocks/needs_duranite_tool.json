@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "taiga:duranite_block",
+    "taiga:duranite_ore",
+    "taiga:dyonite_block",
+    "taiga:imperomite_block",
+    "taiga:obsidiorite_block",
+    "taiga:obsidioritecobble_block",
+    "taiga:palladium_block",
+    "taiga:palladium_ore",
+    "taiga:prometheum_block",
+    "taiga:proxii_block"
+  ]
+}

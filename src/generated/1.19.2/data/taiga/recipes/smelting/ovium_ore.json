@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:ovium_ore"
+  },
+  "result": "taiga:ovium_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:niob_helmet"
+    },
+    {
+      "item": "taiga:niob_chestplate"
+    },
+    {
+      "item": "taiga:niob_leggings"
+    },
+    {
+      "item": "taiga:niob_boots"
+    }
+  ],
+  "repair_material": "taiga:niob"
+}

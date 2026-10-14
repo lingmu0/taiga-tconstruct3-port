@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "fluid": "taiga:molten_tritonite",
+    "amount": 810
+  },
+  "result": {
+    "item": "taiga:tritonite_block"
+  },
+  "cooling_time": 180
+}

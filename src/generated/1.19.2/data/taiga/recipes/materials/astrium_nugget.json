@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:astrium_nugget"
+  },
+  "material": "taiga:astrium",
+  "value": 1,
+  "needed": 9
+}

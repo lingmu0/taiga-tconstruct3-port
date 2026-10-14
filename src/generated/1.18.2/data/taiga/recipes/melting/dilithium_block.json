@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:dilithium_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_dilithium",
+    "amount": 810
+  },
+  "temperature": 1500,
+  "time": 180
+}

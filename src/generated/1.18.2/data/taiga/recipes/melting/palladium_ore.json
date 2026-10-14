@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:palladium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_palladium",
+    "amount": 180
+  },
+  "temperature": 690,
+  "time": 120,
+  "rate": "metal"
+}

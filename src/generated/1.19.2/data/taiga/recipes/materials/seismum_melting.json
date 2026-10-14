@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:seismum",
+  "result": {
+    "fluid": "taiga:molten_seismum",
+    "amount": 90
+  },
+  "temperature": 720
+}

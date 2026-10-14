@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "tconstruct:head": {
+      "durability": 1350,
+      "miningSpeed": 4.65,
+      "attack": 5.9,
+      "harvestTier": "taiga:duranite"
+    },
+    "tconstruct:handle": {
+      "durability": 1.15,
+      "attackSpeed": 1.0,
+      "miningSpeed": 1.0,
+      "attackDamage": 1.0
+    },
+    "tconstruct:extra": {},
+    "tconstruct:limb": {
+      "durability": 1350,
+      "drawSpeed": 0.2,
+      "velocity": 0.8,
+      "accuracy": 0.0
+    },
+    "tconstruct:grip": {
+      "durability": 1.15,
+      "accuracy": 0.0,
+      "meleeAttack": 5.9
+    }
+  }
+}

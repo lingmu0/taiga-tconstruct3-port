@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:cascade",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

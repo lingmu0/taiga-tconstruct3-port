@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:abyssum_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_abyssum",
+    "amount": 810
+  },
+  "temperature": 700,
+  "time": 180
+}

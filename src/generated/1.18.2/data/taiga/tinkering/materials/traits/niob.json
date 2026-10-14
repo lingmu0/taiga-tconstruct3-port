@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:reviving",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

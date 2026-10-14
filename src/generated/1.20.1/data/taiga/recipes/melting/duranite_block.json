@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:duranite_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_duranite",
+    "amount": 810
+  },
+  "temperature": 1400,
+  "time": 180
+}

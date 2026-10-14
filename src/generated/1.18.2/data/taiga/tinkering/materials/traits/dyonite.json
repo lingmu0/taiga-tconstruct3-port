@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:tantrum",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

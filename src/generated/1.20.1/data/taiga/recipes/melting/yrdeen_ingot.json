@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/yrdeen"
+  },
+  "result": {
+    "fluid": "taiga:molten_yrdeen",
+    "amount": 90
+  },
+  "temperature": 710,
+  "time": 60
+}

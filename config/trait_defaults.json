@@ -1,0 +1,1010 @@
+[
+  {
+    "key": "tools.analysing.armorDamageRatio",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "护甲值转换为额外伤害的比例"
+  },
+  {
+    "key": "tools.analysing.damageCapPerLevel",
+    "default": 5.0,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每级额外伤害上限"
+  },
+  {
+    "key": "tools.analysing.miningXpChancePerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级采矿经验触发概率"
+  },
+  {
+    "key": "tools.analysing.miningXp",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "触发时额外经验"
+  },
+  {
+    "key": "tools.arcane.slotsPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "每级增加的升级槽"
+  },
+  {
+    "key": "tools.berserk.damagePerMissingHealth",
+    "default": 0.4,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级在生命完全损失时的伤害倍率增量"
+  },
+  {
+    "key": "tools.blind.chancePerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级致盲概率"
+  },
+  {
+    "key": "tools.blind.durationTicks",
+    "default": 60,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "致盲时间（刻）"
+  },
+  {
+    "key": "tools.blind.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "效果等级，0为I"
+  },
+  {
+    "key": "tools.bright.minimumLight",
+    "default": 12,
+    "minimum": 0,
+    "maximum": 15,
+    "integer": true,
+    "comment": "光明触发最低亮度"
+  },
+  {
+    "key": "tools.bright.miningBonusPerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级挖掘速度增量"
+  },
+  {
+    "key": "tools.bright.nightVisionTicks",
+    "default": 240,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "夜视时间（刻）"
+  },
+  {
+    "key": "tools.cascade.maximumChain",
+    "default": 10,
+    "minimum": 1,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "采掘连锁层数上限"
+  },
+  {
+    "key": "tools.cascade.bonusPerChainLevel",
+    "default": 0.03,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每层连锁每级的速度增量"
+  },
+  {
+    "key": "tools.cascade.resetTicks",
+    "default": 60,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "连锁重置间隔（刻）"
+  },
+  {
+    "key": "tools.catcher.baseTicks",
+    "default": 40,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "缓慢基础时间（刻）"
+  },
+  {
+    "key": "tools.catcher.ticksPerLevel",
+    "default": 20,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "每级追加时间（刻）"
+  },
+  {
+    "key": "tools.catcher.amplifier",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "缓慢效果等级，0为I"
+  },
+  {
+    "key": "tools.congenial.minimumHealthRatio",
+    "default": 0.9,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "和谐触发最低生命比例"
+  },
+  {
+    "key": "tools.congenial.damageBonusPerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级伤害倍率增量"
+  },
+  {
+    "key": "tools.crushing.targetHealthRatio",
+    "default": 0.8,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "碾压伤害触发最低目标生命比例"
+  },
+  {
+    "key": "tools.crushing.damageBonusPerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级伤害倍率增量"
+  },
+  {
+    "key": "tools.crushing.oreChancePerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级原矿增产概率"
+  },
+  {
+    "key": "tools.crushing.oreChanceCap",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "原矿增产概率上限"
+  },
+  {
+    "key": "tools.crushing.extraDropsPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 64,
+    "integer": true,
+    "comment": "每级追加原矿数"
+  },
+  {
+    "key": "tools.cursed.chance",
+    "default": 0.05,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "诅咒触发概率"
+  },
+  {
+    "key": "tools.cursed.durationTicks",
+    "default": 60,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "虚弱时间（刻）"
+  },
+  {
+    "key": "tools.cursed.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "虚弱等级，0为I"
+  },
+  {
+    "key": "tools.curvature.damageBonusPerLevel",
+    "default": 0.3,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级对末影人的伤害倍率增量"
+  },
+  {
+    "key": "tools.dark.maximumLightExclusive",
+    "default": 8,
+    "minimum": 0,
+    "maximum": 16,
+    "integer": true,
+    "comment": "黑暗触发亮度上限，不含本值"
+  },
+  {
+    "key": "tools.dark.miningBonusPerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级挖掘速度增量"
+  },
+  {
+    "key": "tools.dark.nightVisionTicks",
+    "default": 240,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "夜视时间（刻）"
+  },
+  {
+    "key": "tools.decay.chancePerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级凋零触发概率"
+  },
+  {
+    "key": "tools.decay.durationTicks",
+    "default": 60,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "凋零时间（刻）"
+  },
+  {
+    "key": "tools.decay.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "凋零等级，0为I"
+  },
+  {
+    "key": "tools.diffuse.experienceMultiplier",
+    "default": 1.5,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "生物经验倍率"
+  },
+  {
+    "key": "tools.diffuse.dropLossChance",
+    "default": 0.35,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每组掉落物消失概率"
+  },
+  {
+    "key": "tools.dissolving.maximumMultiplier",
+    "default": 4,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": true,
+    "comment": "经验随机整数倍率上限（下限为0）"
+  },
+  {
+    "key": "tools.dissolving.experienceCap",
+    "default": 10000,
+    "minimum": 0,
+    "maximum": 1000000,
+    "integer": true,
+    "comment": "单次经验上限"
+  },
+  {
+    "key": "tools.fracture.damageBonusPerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "完全磨损时每级伤害倍率增量"
+  },
+  {
+    "key": "tools.fracture.miningBonusPerLevel",
+    "default": 0.25,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "完全磨损时每级挖掘速度增量"
+  },
+  {
+    "key": "tools.fragile.durabilityMultiplierPerLevel",
+    "default": 0.85,
+    "minimum": 0.01,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级耐久乘数"
+  },
+  {
+    "key": "tools.fragile.damagePerLevel",
+    "default": 1.0,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每级额外伤害"
+  },
+  {
+    "key": "tools.fragile.extraWearChancePerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级额外磨损概率"
+  },
+  {
+    "key": "tools.fragile.extraWearChanceCap",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "额外磨损概率上限"
+  },
+  {
+    "key": "tools.fragile.extraWear",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "额外磨损耐久"
+  },
+  {
+    "key": "tools.garishly.damageBonusPerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级对免疫火焰目标的伤害倍率增量"
+  },
+  {
+    "key": "tools.glimmer.glowBaseTicks",
+    "default": 80,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "发光基础时间（刻）"
+  },
+  {
+    "key": "tools.glimmer.glowTicksPerLevel",
+    "default": 20,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "每级发光追加时间（刻）"
+  },
+  {
+    "key": "tools.glimmer.miningNightVisionTicks",
+    "default": 240,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "采矿夜视时间（刻）"
+  },
+  {
+    "key": "tools.heroic.damageBonusPerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级对敌对生物的伤害倍率增量"
+  },
+  {
+    "key": "tools.hollow.durabilityMultiplierPerLevel",
+    "default": 0.8,
+    "minimum": 0.01,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级耐久乘数"
+  },
+  {
+    "key": "tools.hollow.attackSpeedBonusPerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级攻速增量"
+  },
+  {
+    "key": "tools.melting.fireBaseSeconds",
+    "default": 2,
+    "minimum": 0,
+    "maximum": 3600,
+    "integer": true,
+    "comment": "点燃基础时间（秒）"
+  },
+  {
+    "key": "tools.melting.fireSecondsPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 3600,
+    "integer": true,
+    "comment": "每级追加点燃时间（秒）"
+  },
+  {
+    "key": "tools.melting.smeltingChancePerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级熔炼掉落概率"
+  },
+  {
+    "key": "tools.mutate.chancePerLevel",
+    "default": 0.2,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级突变概率"
+  },
+  {
+    "key": "tools.mutate.poisonChance",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "触发时选中中毒而非虚弱的概率"
+  },
+  {
+    "key": "tools.mutate.durationTicks",
+    "default": 80,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "效果时间（刻）"
+  },
+  {
+    "key": "tools.mutate.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "效果等级，0为I"
+  },
+  {
+    "key": "tools.naturebound.repairPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "每级每次修复耐久"
+  },
+  {
+    "key": "tools.naturebound.intervalTicks",
+    "default": 40,
+    "minimum": 1,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "修复检查间隔（刻）"
+  },
+  {
+    "key": "tools.ported.distance",
+    "default": 10,
+    "minimum": 2,
+    "maximum": 64,
+    "integer": true,
+    "comment": "传送最大距离（格）"
+  },
+  {
+    "key": "tools.ported.durabilityCost",
+    "default": 20,
+    "minimum": 0,
+    "maximum": 10000,
+    "integer": true,
+    "comment": "传送耐久消耗"
+  },
+  {
+    "key": "tools.ported.cooldownTicks",
+    "default": 200,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "传送冷却（刻）"
+  },
+  {
+    "key": "tools.pulverizing.conversionChance",
+    "default": 1.0,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每组掉落转为下一种矿物的概率"
+  },
+  {
+    "key": "tools.resonance.knockbackPerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级击退增量"
+  },
+  {
+    "key": "tools.resonance.resistanceTicks",
+    "default": 40,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "抗性提升时间（刻）"
+  },
+  {
+    "key": "tools.resonance.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "抗性等级，0为I"
+  },
+  {
+    "key": "tools.reviving.healPerLevel",
+    "default": 2.0,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每级击杀恢复生命"
+  },
+  {
+    "key": "tools.reviving.repairRatioPerLevel",
+    "default": 0.01,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级击杀修复最大耐久比例"
+  },
+  {
+    "key": "tools.reviving.minimumRepair",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "每级最低修复耐久"
+  },
+  {
+    "key": "tools.slaughtering.lootingPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "每级额外抢夺等级"
+  },
+  {
+    "key": "tools.softy.damageMultiplierPerLevel",
+    "default": 0.9,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级伤害乘数"
+  },
+  {
+    "key": "tools.softy.miningBonusPerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级挖掘速度增量"
+  },
+  {
+    "key": "tools.souleater.damageCapPerLevel",
+    "default": 20.0,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每级永久伤害上限"
+  },
+  {
+    "key": "tools.souleater.gainPerKillCap",
+    "default": 0.25,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每次击杀伤害成长上限"
+  },
+  {
+    "key": "tools.souleater.healthDivisor",
+    "default": 400.0,
+    "minimum": 0.01,
+    "maximum": 1000000,
+    "integer": false,
+    "comment": "敌人最大生命除以此值作为成长量"
+  },
+  {
+    "key": "tools.superheavy.damagePerLevel",
+    "default": 1.5,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每级额外伤害"
+  },
+  {
+    "key": "tools.superheavy.attackSpeedMultiplierPerLevel",
+    "default": 0.85,
+    "minimum": 0.01,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级攻速乘数"
+  },
+  {
+    "key": "tools.superheavy.miningPenaltyPerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每级采掘速度惩罚"
+  },
+  {
+    "key": "tools.superheavy.miningPenaltyCap",
+    "default": 0.4,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "采掘速度惩罚上限"
+  },
+  {
+    "key": "tools.tantrum.minimumDamageMultiplier",
+    "default": 0.85,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "伤害随机倍率下限"
+  },
+  {
+    "key": "tools.tantrum.maximumDamageMultiplier",
+    "default": 1.35,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "伤害随机倍率上限，低于下限时按下限处理"
+  },
+  {
+    "key": "tools.tantrum.strengthChance",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "力量触发概率"
+  },
+  {
+    "key": "tools.tantrum.strengthTicks",
+    "default": 40,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "力量时间（刻）"
+  },
+  {
+    "key": "tools.tantrum.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "力量等级，0为I"
+  },
+  {
+    "key": "tools.unstable.minimumDamageMultiplier",
+    "default": 0.75,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "伤害随机倍率下限"
+  },
+  {
+    "key": "tools.unstable.maximumDamageMultiplier",
+    "default": 1.25,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "伤害随机倍率上限，低于下限时按下限处理"
+  },
+  {
+    "key": "tools.whirl.knockbackPerLevel",
+    "default": 0.25,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级击退增量"
+  },
+  {
+    "key": "tools.whirl.speedTicks",
+    "default": 40,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "速度效果时间（刻）"
+  },
+  {
+    "key": "tools.whirl.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "速度等级，0为I"
+  },
+  {
+    "key": "tools.taiga_alien.durabilityBonusPerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级耐久倍率增量"
+  },
+  {
+    "key": "tools.taiga_alien.miningSpeedPerLevel",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 100,
+    "integer": false,
+    "comment": "每级额外采掘速度"
+  },
+  {
+    "key": "tools.taiga_crumbling.miningBonusPerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每级采掘速度增量"
+  },
+  {
+    "key": "tool_rules.nightVisionCheckTicks",
+    "default": 40,
+    "minimum": 1,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "光明和黑暗夜视检查间隔（刻）"
+  },
+  {
+    "key": "armor_rules.maximumTotalLevel",
+    "default": 4,
+    "minimum": 1,
+    "maximum": 64,
+    "integer": true,
+    "comment": "全身穿戴效果的同词条等级上限"
+  },
+  {
+    "key": "armor_rules.maximumPieceLevel",
+    "default": 2,
+    "minimum": 1,
+    "maximum": 64,
+    "integer": true,
+    "comment": "单件坚固、符文槽和光合的等级上限"
+  },
+  {
+    "key": "armor_rules.maximumDamageReduction",
+    "default": 0.3,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "TAIGA盔甲额外减伤合计上限"
+  },
+  {
+    "key": "armor.bulwark.reductionPerLevel",
+    "default": 0.03,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级近战减伤"
+  },
+  {
+    "key": "armor.heat_guard.reductionPerLevel",
+    "default": 0.04,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级火焰和熔岩减伤"
+  },
+  {
+    "key": "armor.deflection.reductionPerLevel",
+    "default": 0.04,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级弹射物减伤"
+  },
+  {
+    "key": "armor.anchor.knockbackPerLevel",
+    "default": 0.04,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级击退抗性增量"
+  },
+  {
+    "key": "armor.anchor.speedPenaltyPerLevel",
+    "default": 0.01,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级移动速度惩罚"
+  },
+  {
+    "key": "armor.lightweight.speedBonusPerLevel",
+    "default": 0.02,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "每总等级移动速度增量"
+  },
+  {
+    "key": "armor.cushion.reductionPerLevel",
+    "default": 0.06,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级摔落减伤"
+  },
+  {
+    "key": "armor.last_stand.healthThreshold",
+    "default": 0.4,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "生命比例低于此值触发"
+  },
+  {
+    "key": "armor.last_stand.reductionPerLevel",
+    "default": 0.03,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级减伤"
+  },
+  {
+    "key": "armor.reactive.damagePerLevel",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每总等级反伤"
+  },
+  {
+    "key": "armor.reactive.cooldownTicks",
+    "default": 20,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "反伤共享冷却（刻）"
+  },
+  {
+    "key": "armor.venom.chancePerLevel",
+    "default": 0.15,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级中毒触发概率"
+  },
+  {
+    "key": "armor.venom.cooldownTicks",
+    "default": 80,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "毒棘共享冷却（刻）"
+  },
+  {
+    "key": "armor.venom.durationTicks",
+    "default": 60,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "中毒时间（刻）"
+  },
+  {
+    "key": "armor.venom.amplifier",
+    "default": 0,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "中毒等级，0为I"
+  },
+  {
+    "key": "armor.radiant.nightVisionTicks",
+    "default": 220,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "夜视时间（刻），每秒刷新"
+  },
+  {
+    "key": "armor.natural.repairPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": true,
+    "comment": "每级每次修复本件耐久"
+  },
+  {
+    "key": "armor.natural.intervalTicks",
+    "default": 100,
+    "minimum": 20,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "修复间隔（刻），每秒检查，向上取整到检查时机"
+  },
+  {
+    "key": "armor.renewal.healPerLevel",
+    "default": 0.5,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每总等级击杀恢复生命"
+  },
+  {
+    "key": "armor.renewal.cooldownTicks",
+    "default": 100,
+    "minimum": 0,
+    "maximum": 72000,
+    "integer": true,
+    "comment": "生息共享冷却（刻）"
+  },
+  {
+    "key": "armor.aquatic.airPerLevelPerSecond",
+    "default": 4,
+    "minimum": 0,
+    "maximum": 300,
+    "integer": true,
+    "comment": "每总等级每秒补回氧气"
+  },
+  {
+    "key": "armor.vitality.healthPerLevel",
+    "default": 1.0,
+    "minimum": 0,
+    "maximum": 1000,
+    "integer": false,
+    "comment": "每总等级生命上限增量"
+  },
+  {
+    "key": "armor.reinforced.durabilityBonusPerLevel",
+    "default": 0.1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": false,
+    "comment": "单件每级耐久增量"
+  },
+  {
+    "key": "armor.volatile.maximumReductionPerLevel",
+    "default": 0.03,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级随机减伤上限"
+  },
+  {
+    "key": "armor.arcane.slotsPerLevel",
+    "default": 1,
+    "minimum": 0,
+    "maximum": 10,
+    "integer": true,
+    "comment": "单件每级增加升级槽"
+  },
+  {
+    "key": "armor.composed.healthThreshold",
+    "default": 0.9,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "生命比例达到此值触发"
+  },
+  {
+    "key": "armor.composed.reductionPerLevel",
+    "default": 0.03,
+    "minimum": 0,
+    "maximum": 1,
+    "integer": false,
+    "comment": "每总等级减伤"
+  }
+]

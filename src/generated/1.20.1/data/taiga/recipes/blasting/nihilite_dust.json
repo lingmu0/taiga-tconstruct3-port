@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:nihilite_dust"
+  },
+  "result": "taiga:nihilite_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

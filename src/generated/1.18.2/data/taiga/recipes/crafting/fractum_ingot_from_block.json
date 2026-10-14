@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:fractum_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:fractum_ingot",
+    "count": 9
+  }
+}

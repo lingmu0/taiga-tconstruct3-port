@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:uru_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_uru",
+    "amount": 810
+  },
+  "temperature": 1200,
+  "time": 180
+}

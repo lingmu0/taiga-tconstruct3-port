@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:adamant_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_adamant",
+    "amount": 810
+  },
+  "temperature": 1500,
+  "time": 180
+}

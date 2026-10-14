@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/imperomite"
+  },
+  "result": {
+    "fluid": "taiga:molten_imperomite",
+    "amount": 90
+  },
+  "temperature": 900,
+  "time": 60
+}

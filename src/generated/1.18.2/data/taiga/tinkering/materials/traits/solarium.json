@@ -1,0 +1,13 @@
+{
+  "default": [
+    {
+      "name": "taiga:superheavy",
+      "level": 1
+    },
+    {
+      "name": "taiga:crushing",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/karmesine"
+  },
+  "result": {
+    "fluid": "taiga:molten_karmesine",
+    "amount": 10
+  },
+  "temperature": 750,
+  "time": 20
+}

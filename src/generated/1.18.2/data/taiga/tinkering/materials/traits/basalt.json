@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:softy",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

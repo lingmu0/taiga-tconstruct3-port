@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:melting_fuel",
+  "fluid": {
+    "fluid": "taiga:molten_dilithium",
+    "amount": 50
+  },
+  "duration": 100,
+  "temperature": 1700,
+  "rate": 10
+}

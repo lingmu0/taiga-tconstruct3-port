@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:palladium",
+  "result": {
+    "fluid": "taiga:molten_palladium",
+    "amount": 90
+  },
+  "temperature": 690
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "taiga:tiberium_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "taiga:armor/building/tiberium_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_material",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "taiga:armor/building/tiberium_helmet",
+      "taiga:armor/building/tiberium_chestplate",
+      "taiga:armor/building/tiberium_leggings",
+      "taiga:armor/building/tiberium_boots"
+    ]
+  }
+}

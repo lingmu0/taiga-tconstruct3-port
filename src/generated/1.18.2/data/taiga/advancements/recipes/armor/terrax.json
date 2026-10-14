@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "taiga:terrax_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "taiga:armor/building/terrax_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_material",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "taiga:armor/building/terrax_helmet",
+      "taiga:armor/building/terrax_chestplate",
+      "taiga:armor/building/terrax_leggings",
+      "taiga:armor/building/terrax_boots"
+    ]
+  }
+}

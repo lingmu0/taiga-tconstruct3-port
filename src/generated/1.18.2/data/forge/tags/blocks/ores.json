@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "taiga:abyssum_ore",
+    "taiga:aurorium_ore",
+    "taiga:deepslate_dilithium_ore",
+    "taiga:deepslate_vibranium_ore",
+    "taiga:dilithium_ore",
+    "taiga:duranite_ore",
+    "taiga:eezo_ore",
+    "taiga:jauxum_ore",
+    "taiga:karmesine_ore",
+    "taiga:osram_ore",
+    "taiga:ovium_ore",
+    "taiga:palladium_ore",
+    "taiga:prometheum_ore",
+    "taiga:tiberium_ore",
+    "taiga:uru_ore",
+    "taiga:valyrium_ore",
+    "taiga:vibranium_ore"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_ovium",
+    "amount": 90
+  },
+  "result": {
+    "item": "taiga:ovium_ingot"
+  },
+  "cooling_time": 60,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  }
+}

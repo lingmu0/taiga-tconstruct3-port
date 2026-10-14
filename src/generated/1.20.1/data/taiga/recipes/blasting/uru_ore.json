@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:uru_ore"
+  },
+  "result": "taiga:uru_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

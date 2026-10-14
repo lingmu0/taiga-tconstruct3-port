@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "base": {
+      "tconstruct:durability": 484,
+      "tconstruct:armor": 2,
+      "tconstruct:armor_toughness": 2.5,
+      "tconstruct:knockback_resistance": 0.08
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.4
+    }
+  },
+  "slots": {
+    "upgrades": 2,
+    "defense": 3,
+    "abilities": 1
+  },
+  "traits": [
+    {
+      "name": "taiga:armor_reactive",
+      "level": 1
+    },
+    {
+      "name": "taiga:armor_deflection",
+      "level": 1
+    }
+  ]
+}

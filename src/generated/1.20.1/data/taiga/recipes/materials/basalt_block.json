@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:basalt_block"
+  },
+  "material": "taiga:basalt",
+  "value": 9,
+  "needed": 1
+}

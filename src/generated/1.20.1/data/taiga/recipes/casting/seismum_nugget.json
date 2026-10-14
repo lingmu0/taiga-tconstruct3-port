@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_seismum",
+    "amount": 10
+  },
+  "result": {
+    "item": "taiga:seismum_nugget"
+  },
+  "cooling_time": 20,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/nugget"
+  }
+}

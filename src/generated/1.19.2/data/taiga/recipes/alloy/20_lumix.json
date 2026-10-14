@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "taiga:molten_palladium",
+      "amount": 90
+    },
+    {
+      "fluid": "taiga:molten_terrax",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_lumix",
+    "amount": 90
+  },
+  "temperature": 850
+}

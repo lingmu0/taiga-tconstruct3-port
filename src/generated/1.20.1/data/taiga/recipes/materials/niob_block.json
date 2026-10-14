@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:niob_block"
+  },
+  "material": "taiga:niob",
+  "value": 9,
+  "needed": 1
+}

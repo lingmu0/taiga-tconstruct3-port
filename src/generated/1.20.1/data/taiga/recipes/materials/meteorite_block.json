@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:meteorite_block"
+  },
+  "material": "taiga:meteorite",
+  "value": 9,
+  "needed": 1
+}

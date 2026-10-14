@@ -1,0 +1,17 @@
+{
+  "default": [],
+  "perStat": {
+    "tconstruct:handle": [
+      {
+        "name": "taiga:resonance",
+        "level": 1
+      }
+    ],
+    "tconstruct:head": [
+      {
+        "name": "taiga:heroic",
+        "level": 1
+      }
+    ]
+  }
+}

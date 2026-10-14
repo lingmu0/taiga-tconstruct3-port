@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:astrium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:astrium_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "default": [
+    {
+      "name": "taiga:superheavy",
+      "level": 1
+    },
+    {
+      "name": "taiga:crushing",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_natural",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_anchor",
+        "level": 1
+      }
+    ]
+  }
+}

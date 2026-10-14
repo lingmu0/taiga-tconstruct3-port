@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "tconstruct:head": {
+      "durability": 350,
+      "miningSpeed": 2.0,
+      "attack": 6.66,
+      "harvestTier": "minecraft:netherite"
+    },
+    "tconstruct:handle": {
+      "durability": 0.85,
+      "attackSpeed": 1.0,
+      "miningSpeed": 1.0,
+      "attackDamage": 1.0
+    },
+    "tconstruct:extra": {},
+    "tconstruct:limb": {
+      "durability": 350,
+      "drawSpeed": -0.2,
+      "velocity": -0.2,
+      "accuracy": 0.0
+    },
+    "tconstruct:grip": {
+      "durability": 0.85,
+      "accuracy": 0.0,
+      "meleeAttack": 6.66
+    }
+  }
+}

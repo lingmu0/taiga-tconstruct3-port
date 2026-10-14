@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:dyonite",
+  "result": {
+    "fluid": "taiga:molten_dyonite",
+    "amount": 90
+  },
+  "temperature": 660
+}

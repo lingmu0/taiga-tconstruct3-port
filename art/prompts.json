@@ -1,0 +1,54 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "name": "tiberium",
+      "source_file": "art/source/tiberium.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/tiberium.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Edit the original TAIGA Tiberium 16x16 ore PNG: extract and improve only vivid lime-green crystalline mineral inclusions. Remove all reddish netherrack into true transparent alpha. Preserve chartreuse and emerald crystals, dark green rims and yellow-green highlights. Natural asymmetrical clusters with at least 55% transparent space, not a central icon or frame. Strict modern Minecraft pixel art on a 16x16 logical flat-color grid; no antialiasing, blur, 3D or text. Nearest-neighbor enlarged transparent square intended to overlay the vanilla netherrack texture."
+    },
+    {
+      "name": "prometheum",
+      "source_file": "art/source/prometheum.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/prometheum.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA prometheum ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: very dark purple mineral veins and clusters, dusky violet highlights. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "valyrium",
+      "source_file": "art/source/valyrium.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/valyrium.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA valyrium ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: scarlet and bright red mineral veins and clusters, burgundy rims. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "karmesine",
+      "source_file": "art/source/karmesine.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/karmesine.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA karmesine ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: orange-red and amber elongated ore shards, dark rust-red rims. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "jauxum",
+      "source_file": "art/source/jauxum.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/jauxum.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA jauxum ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: yellow-green and pale golden mineral flecks, dark olive rims. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "ovium",
+      "source_file": "art/source/ovium.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/ovium.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA ovium ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: dark violet and indigo small crystals, muted lavender highlights. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "vibranium",
+      "source_file": "art/source/vibranium.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/vibranium.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA vibranium ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: small pale cyan and mint-silver angular mineral flecks, slate-blue rims. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    },
+    {
+      "name": "dilithium",
+      "source_file": "art/source/dilithium.png",
+      "reference": "src/main/resources/assets/taiga/textures/block/ore/dilithium.png",
+      "prompt": "Use case: background-extraction / precise-object-edit. Asset: Minecraft block ore overlay texture. Edit target is the attached original TAIGA dilithium ore 16x16 PNG. Extract and modernize ONLY its mineral inclusions. Remove ALL background stone into real transparent alpha. Preserve the mineral's identity and color theme: turquoise and icy cyan elongated crystals, dark teal rims. Natural asymmetrical small clusters scattered over the square tile with at least 55% transparent space, not one central item icon, no decorative frame. Strict modern Minecraft 1.20 pixel art, exactly 16 by 16 logical pixels, every logical pixel a flat color, grid aligned, no antialiasing, no blur, no 3D cube, no text, no surrounding ground. Dark outlines must use the mineral's dark color, not remaining stone. Render a square PNG with true alpha, enlarged only by nearest-neighbor so it can be directly reduced to 16x16. This transparent mineral layer will be laid onto the matching vanilla block texture by a Minecraft block model."
+    }
+  ]
+}

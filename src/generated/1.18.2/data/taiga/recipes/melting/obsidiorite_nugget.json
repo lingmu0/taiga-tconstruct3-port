@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/obsidiorite"
+  },
+  "result": {
+    "fluid": "taiga:molten_obsidiorite",
+    "amount": 10
+  },
+  "temperature": 1050,
+  "time": 20
+}

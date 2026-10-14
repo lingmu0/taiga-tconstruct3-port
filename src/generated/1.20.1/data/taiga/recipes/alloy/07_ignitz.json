@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "tconstruct:molten_hepatizon",
+      "amount": 180
+    },
+    {
+      "fluid": "taiga:molten_terrax",
+      "amount": 180
+    },
+    {
+      "fluid": "taiga:molten_osram",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_ignitz",
+    "amount": 180
+  },
+  "temperature": 850
+}

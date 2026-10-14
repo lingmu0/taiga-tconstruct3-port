@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_lumix",
+    "amount": 90
+  },
+  "output": "taiga:lumix",
+  "temperature": 500
+}

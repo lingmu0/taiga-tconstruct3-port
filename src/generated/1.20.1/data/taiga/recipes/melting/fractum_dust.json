@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/fractum"
+  },
+  "result": {
+    "fluid": "taiga:molten_fractum",
+    "amount": 90
+  },
+  "temperature": 750,
+  "time": 60
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:obsidioritecobble_block"
+  },
+  "result": "taiga:obsidiorite_block",
+  "experience": 0.1,
+  "cookingtime": 200
+}

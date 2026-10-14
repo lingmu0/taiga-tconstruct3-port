@@ -1,0 +1,2 @@
+pluginManagement { repositories { maven { url = 'https://maven.minecraftforge.net/' }; gradlePluginPortal(); mavenCentral() } }
+rootProject.name = 'taiga-1.18.2'

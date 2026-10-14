@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:curvature",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

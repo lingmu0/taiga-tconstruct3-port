@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "name": "taiga:unstable",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_volatile",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_reactive",
+        "level": 1
+      }
+    ]
+  }
+}

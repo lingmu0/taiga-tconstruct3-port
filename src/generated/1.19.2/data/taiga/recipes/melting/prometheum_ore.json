@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:prometheum_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_prometheum",
+    "amount": 180
+  },
+  "temperature": 850,
+  "time": 120,
+  "rate": "metal"
+}

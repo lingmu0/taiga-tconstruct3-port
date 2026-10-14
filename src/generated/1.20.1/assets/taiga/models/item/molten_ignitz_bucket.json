@@ -1,0 +1,6 @@
+{
+  "parent": "forge:item/bucket_drip",
+  "fluid": "taiga:molten_ignitz",
+  "loader": "tconstruct:fluid_container",
+  "flip_gas": false
+}

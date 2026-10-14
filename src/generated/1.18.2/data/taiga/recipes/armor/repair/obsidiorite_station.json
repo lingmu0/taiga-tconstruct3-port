@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:obsidiorite_helmet"
+    },
+    {
+      "item": "taiga:obsidiorite_chestplate"
+    },
+    {
+      "item": "taiga:obsidiorite_leggings"
+    },
+    {
+      "item": "taiga:obsidiorite_boots"
+    }
+  ],
+  "repair_material": "taiga:obsidiorite"
+}

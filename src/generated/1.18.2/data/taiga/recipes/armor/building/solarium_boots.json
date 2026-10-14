@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "taiga:solarium_ingot"
+    }
+  },
+  "result": {
+    "item": "taiga:solarium_boots"
+  }
+}

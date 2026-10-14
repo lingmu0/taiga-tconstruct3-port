@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "taiga:adamant_ingot"
+    }
+  },
+  "result": {
+    "item": "taiga:adamant_boots"
+  }
+}

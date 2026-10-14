@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:seismum_block"
+  },
+  "material": "taiga:seismum",
+  "value": 9,
+  "needed": 1
+}

@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:basalt_helmet"
+    },
+    {
+      "item": "taiga:basalt_chestplate"
+    },
+    {
+      "item": "taiga:basalt_leggings"
+    },
+    {
+      "item": "taiga:basalt_boots"
+    }
+  ],
+  "repair_material": "taiga:basalt"
+}

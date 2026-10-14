@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:yrdeen_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_yrdeen",
+    "amount": 810
+  },
+  "temperature": 710,
+  "time": 180
+}

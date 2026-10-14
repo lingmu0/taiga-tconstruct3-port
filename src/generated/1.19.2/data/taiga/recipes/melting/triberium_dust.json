@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/triberium"
+  },
+  "result": {
+    "fluid": "taiga:molten_triberium",
+    "amount": 90
+  },
+  "temperature": 550,
+  "time": 60
+}

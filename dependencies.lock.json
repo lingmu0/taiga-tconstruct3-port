@@ -1,0 +1,74 @@
+[
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.18.2-3.6.4.113/TConstruct-1.18.2-3.6.4.113.pom",
+    "sha256": "f1e0b4375822a7a2e254acf4c7ca50fc98cf10fcc0d3816f6c511fbf78dcd798"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.18.2-3.6.4.113/TConstruct-1.18.2-3.6.4.113.jar",
+    "sha256": "935f6061eedc55c5f8924e39075276c9334b3efcb3d1cd5af680403902b6be9f"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.18.2-3.6.4.113/TConstruct-1.18.2-3.6.4.113-sources.jar",
+    "sha256": "cd9b5945375041bd7c3f0093dda638e71ff5f41515af971c7b0db777219c4fc0"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.18.2-1.9.42/Mantle-1.18.2-1.9.42.pom",
+    "sha256": "3a4825736c552d04fd8ae402fc2f744fc67edf38bcfc6039af6f19e983dbfa37"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.18.2-1.9.42/Mantle-1.18.2-1.9.42.jar",
+    "sha256": "73cb140da2805714b4780f1ceaf774bce0b8564e428abe5f62e374b604dbf719"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.18.2-1.9.42/Mantle-1.18.2-1.9.42-sources.jar",
+    "sha256": "88ab3214029268d78279a6b919a50c8dd9fe36eeed6be2d957ff35fa58c5cb76"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.19.2-3.8.2.37/TConstruct-1.19.2-3.8.2.37.pom",
+    "sha256": "d0ccc11eb33a9c481305238f08467745dd197f33a3413eaf1af82ce7c0066b1a"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.19.2-3.8.2.37/TConstruct-1.19.2-3.8.2.37.jar",
+    "sha256": "f66e1d5b8134268769c7cd6c44d0049b10989e95e12d054558a6e68a7f84bf1d"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.19.2-3.8.2.37/TConstruct-1.19.2-3.8.2.37-sources.jar",
+    "sha256": "1d284516bde6e5fa795275c42fae5c4e7cedd2af94502109b503c3ff2727ccf2"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.19.2-1.10.35/Mantle-1.19.2-1.10.35.pom",
+    "sha256": "4f1b9fe955718e43255020be6f8ff3d1e718b3e53462ae0a2481d2acc294e5f4"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.19.2-1.10.35/Mantle-1.19.2-1.10.35.jar",
+    "sha256": "1f993c0da2a6c24d0cb823823ba9c75998c4fc7742002045c7d5223fd4f211ac"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.19.2-1.10.35/Mantle-1.19.2-1.10.35-sources.jar",
+    "sha256": "d5c7026ab6e2a1f08230cc9162e3b1f01f33643787de83bcb833042a1f259176"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.20.1-3.9.2.37/TConstruct-1.20.1-3.9.2.37.pom",
+    "sha256": "36f7a8428e8395a1ea346c47514bf351c4970e4d5272459261ca122c2a0da99a"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.20.1-3.9.2.37/TConstruct-1.20.1-3.9.2.37.jar",
+    "sha256": "13ff4eccdf641485d059a902d2ad58daf9ff85914da456ab1a9d00bc44f31ba6"
+  },
+  {
+    "path": "slimeknights/tconstruct/TConstruct/1.20.1-3.9.2.37/TConstruct-1.20.1-3.9.2.37-sources.jar",
+    "sha256": "55b5a8e7661d8fc2ffa65fe712db46783dfd5848a1ef4ec4981933304efb59c7"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.20.1-1.11.43/Mantle-1.20.1-1.11.43.pom",
+    "sha256": "f5975ed5fc445a9061876316a5348ece01a0a9c13dba109f5d1a833cf5d81415"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.20.1-1.11.43/Mantle-1.20.1-1.11.43.jar",
+    "sha256": "b4fa81dd7d1c3cf82f07569bdd1473be4645eb93cf86e590580fad060db842ee"
+  },
+  {
+    "path": "slimeknights/mantle/Mantle/1.20.1-1.11.43/Mantle-1.20.1-1.11.43-sources.jar",
+    "sha256": "7a4558f33c283c225be5b965952ebd2e4f15f414af785a14509a2e111d998652"
+  }
+]

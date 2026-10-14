@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/valyrium"
+  },
+  "result": {
+    "fluid": "taiga:molten_valyrium",
+    "amount": 90
+  },
+  "temperature": 1500,
+  "time": 60
+}

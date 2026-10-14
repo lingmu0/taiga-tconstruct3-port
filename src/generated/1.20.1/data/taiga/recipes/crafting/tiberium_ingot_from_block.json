@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:tiberium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:tiberium_ingot",
+    "count": 9
+  }
+}

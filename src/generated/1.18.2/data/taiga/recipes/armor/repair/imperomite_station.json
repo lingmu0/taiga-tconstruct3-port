@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:imperomite_helmet"
+    },
+    {
+      "item": "taiga:imperomite_chestplate"
+    },
+    {
+      "item": "taiga:imperomite_leggings"
+    },
+    {
+      "item": "taiga:imperomite_boots"
+    }
+  ],
+  "repair_material": "taiga:imperomite"
+}

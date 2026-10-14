@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:palladium_nugget"
+  },
+  "material": "taiga:palladium",
+  "value": 1,
+  "needed": 9
+}

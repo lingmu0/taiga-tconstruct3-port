@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "taiga:molten_tiberium",
+      "amount": 450
+    },
+    {
+      "fluid": "taiga:molten_dilithium",
+      "amount": 180
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_triberium",
+    "amount": 90
+  },
+  "temperature": 1000
+}

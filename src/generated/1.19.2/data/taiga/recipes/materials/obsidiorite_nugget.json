@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:obsidiorite_nugget"
+  },
+  "material": "taiga:obsidiorite",
+  "value": 1,
+  "needed": 9
+}

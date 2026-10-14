@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "fluid": "taiga:molten_basalt",
+    "amount": 810
+  },
+  "result": {
+    "item": "taiga:basalt_block"
+  },
+  "cooling_time": 180
+}

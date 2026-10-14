@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:whirl",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:meteorite_dust"
+  },
+  "result": "taiga:meteorite_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

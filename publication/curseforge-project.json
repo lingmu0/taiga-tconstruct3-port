@@ -1,0 +1,13 @@
+{
+  "name": "TAIGA: Tinkers' Alloying Addon — Unofficial Port",
+  "slug": "taiga-tconstruct3-port",
+  "summary": "TAIGA ores, alloys, tool and armor traits for Forge and Tinkers' Construct 3.",
+  "license": "GPL-3.0-only",
+  "sourceUrl": "https://github.com/lingmu0/taiga-tconstruct3-port",
+  "issuesUrl": "https://github.com/lingmu0/taiga-tconstruct3-port/issues",
+  "allowComments": true,
+  "allowThirdPartyDistribution": true,
+  "releaseType": "beta",
+  "dependencies": ["tinkers-construct", "mantle"],
+  "categories": ["Tinker's Construct", "Addons", "Ores and Resources", "Armor, Tools, and Weapons"]
+}

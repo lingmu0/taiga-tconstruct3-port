@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:fracture",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

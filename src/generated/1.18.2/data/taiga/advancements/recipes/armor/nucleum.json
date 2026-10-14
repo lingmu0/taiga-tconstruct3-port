@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "taiga:nucleum_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "taiga:armor/building/nucleum_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_material",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "taiga:armor/building/nucleum_helmet",
+      "taiga:armor/building/nucleum_chestplate",
+      "taiga:armor/building/nucleum_leggings",
+      "taiga:armor/building/nucleum_boots"
+    ]
+  }
+}

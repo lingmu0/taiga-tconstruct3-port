@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/niob"
+  },
+  "result": {
+    "fluid": "taiga:molten_niob",
+    "amount": 90
+  },
+  "temperature": 550,
+  "time": 60
+}

@@ -1,0 +1,37 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '5.1.77'
+}
+group = 'com.sosnitzka.taiga'
+version = '2.0.0-port.5'
+base { archivesName = 'taiga-1.19.2-forge' }
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+    withSourcesJar()
+}
+minecraft {
+    mappings channel: 'official', version: '1.19.2'
+    runs {
+        client { workingDirectory project.file('run'); mods { taiga { source sourceSets.main } } }
+        server { workingDirectory project.file('run'); args '--nogui'; mods { taiga { source sourceSets.main } } }
+    }
+}
+sourceSets.main {
+    java.srcDirs = ['../src/main/java', '../src/platform/1.19.2/java']
+    resources.srcDirs = ['../src/generated/1.19.2', '../src/main/resources']
+}
+repositories {
+    maven { url = uri('../.deps/maven') }
+    maven { url = 'https://dvs1.progwml6.com/files/maven/' }
+}
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.19.2-43.3.0'
+    implementation fg.deobf('slimeknights.mantle:Mantle:1.19.2-1.10.35')
+    implementation fg.deobf('slimeknights.tconstruct:TConstruct:1.19.2-3.8.2.37')
+}
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.release = 17 }
+tasks.named('jar', Jar).configure {
+    from('../LICENSE'); from('../NOTICE.md')
+    manifest { attributes 'Implementation-Version': project.version, 'Implementation-Title': 'TAIGA Unofficial Port' }
+    finalizedBy 'reobfJar'
+}
+tasks.named('sourcesJar', Jar).configure { from('../LICENSE'); from('../NOTICE.md') }

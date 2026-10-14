@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:vibranium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_vibranium",
+    "amount": 180
+  },
+  "temperature": 1500,
+  "time": 120,
+  "rate": "metal"
+}

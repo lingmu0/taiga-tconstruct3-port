@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/terrax"
+  },
+  "result": {
+    "fluid": "taiga:molten_terrax",
+    "amount": 90
+  },
+  "temperature": 850,
+  "time": 60
+}

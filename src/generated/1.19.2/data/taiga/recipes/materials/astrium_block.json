@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:astrium_block"
+  },
+  "material": "taiga:astrium",
+  "value": 9,
+  "needed": 1
+}

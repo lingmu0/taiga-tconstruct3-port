@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:nihilite",
+  "result": {
+    "fluid": "taiga:molten_nihilite",
+    "amount": 90
+  },
+  "temperature": 580
+}

@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "tconstruct:head": {
+      "durability": 877,
+      "miningSpeed": 2.0,
+      "attack": 7.2,
+      "harvestTier": "taiga:valyrium"
+    },
+    "tconstruct:handle": {
+      "durability": 1.5,
+      "attackSpeed": 1.0,
+      "miningSpeed": 1.0,
+      "attackDamage": 1.0
+    },
+    "tconstruct:extra": {},
+    "tconstruct:limb": {
+      "durability": 877,
+      "drawSpeed": 0.3,
+      "velocity": -0.2,
+      "accuracy": 0.0
+    },
+    "tconstruct:grip": {
+      "durability": 1.5,
+      "accuracy": 0.0,
+      "meleeAttack": 7.2
+    }
+  }
+}

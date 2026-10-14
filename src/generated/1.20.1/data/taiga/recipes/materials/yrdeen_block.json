@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:yrdeen_block"
+  },
+  "material": "taiga:yrdeen",
+  "value": 9,
+  "needed": 1
+}

@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:lumix_nugget"
+  },
+  "material": "taiga:lumix",
+  "value": 1,
+  "needed": 9
+}

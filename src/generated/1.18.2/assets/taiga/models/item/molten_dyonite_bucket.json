@@ -1,0 +1,6 @@
+{
+  "parent": "forge:item/bucket_drip",
+  "fluid": "taiga:molten_dyonite",
+  "loader": "forge:bucket",
+  "flip_gas": false
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:ignitz_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:ignitz_ingot",
+    "count": 9
+  }
+}

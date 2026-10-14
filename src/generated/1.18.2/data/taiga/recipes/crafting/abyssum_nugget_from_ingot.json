@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:abyssum_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:abyssum_nugget",
+    "count": 9
+  }
+}

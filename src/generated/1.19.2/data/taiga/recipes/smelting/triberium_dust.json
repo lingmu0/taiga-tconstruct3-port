@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:triberium_dust"
+  },
+  "result": "taiga:triberium_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

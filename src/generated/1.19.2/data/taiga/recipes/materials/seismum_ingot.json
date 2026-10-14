@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:seismum_ingot"
+  },
+  "material": "taiga:seismum",
+  "value": 1,
+  "needed": 1
+}

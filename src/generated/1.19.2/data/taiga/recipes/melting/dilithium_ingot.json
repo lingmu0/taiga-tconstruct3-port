@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/dilithium"
+  },
+  "result": {
+    "fluid": "taiga:molten_dilithium",
+    "amount": 90
+  },
+  "temperature": 1500,
+  "time": 60
+}

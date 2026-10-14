@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:astrium",
+  "result": {
+    "fluid": "taiga:molten_astrium",
+    "amount": 90
+  },
+  "temperature": 680
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "taiga:yrdeen_ingot"
+    }
+  },
+  "result": {
+    "item": "taiga:yrdeen_boots"
+  }
+}

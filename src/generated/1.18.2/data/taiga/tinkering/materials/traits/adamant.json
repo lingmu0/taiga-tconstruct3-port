@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:berserk",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

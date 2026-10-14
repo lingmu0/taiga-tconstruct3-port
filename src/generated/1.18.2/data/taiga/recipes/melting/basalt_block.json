@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:basalt_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_basalt",
+    "amount": 810
+  },
+  "temperature": 550,
+  "time": 180
+}

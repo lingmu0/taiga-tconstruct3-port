@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:eezo_helmet"
+    },
+    {
+      "item": "taiga:eezo_chestplate"
+    },
+    {
+      "item": "taiga:eezo_leggings"
+    },
+    {
+      "item": "taiga:eezo_boots"
+    }
+  ],
+  "repair_material": "taiga:eezo"
+}

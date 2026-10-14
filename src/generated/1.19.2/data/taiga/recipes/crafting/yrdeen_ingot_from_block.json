@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:yrdeen_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:yrdeen_ingot",
+    "count": 9
+  }
+}

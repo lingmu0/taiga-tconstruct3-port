@@ -1,0 +1,26 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "taiga:molten_tiberium",
+      "amount": 1080
+    },
+    {
+      "fluid": "taiga:molten_fractum",
+      "amount": 90
+    },
+    {
+      "fluid": "taiga:molten_seismum",
+      "amount": 90
+    },
+    {
+      "fluid": "taiga:molten_osram",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_dyonite",
+    "amount": 270
+  },
+  "temperature": 800
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_astrium",
+    "amount": 10
+  },
+  "result": {
+    "item": "taiga:astrium_nugget"
+  },
+  "cooling_time": 20,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/nugget"
+  }
+}

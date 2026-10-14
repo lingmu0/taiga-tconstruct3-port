@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:karmesine_dust"
+  },
+  "result": "taiga:karmesine_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

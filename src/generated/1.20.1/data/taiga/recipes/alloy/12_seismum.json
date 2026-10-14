@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "tconstruct:molten_obsidian",
+      "amount": 360
+    },
+    {
+      "fluid": "taiga:molten_triberium",
+      "amount": 180
+    },
+    {
+      "fluid": "taiga:molten_eezo",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_seismum",
+    "amount": 360
+  },
+  "temperature": 800
+}

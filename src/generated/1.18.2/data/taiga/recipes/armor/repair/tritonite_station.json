@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:tritonite_helmet"
+    },
+    {
+      "item": "taiga:tritonite_chestplate"
+    },
+    {
+      "item": "taiga:tritonite_leggings"
+    },
+    {
+      "item": "taiga:tritonite_boots"
+    }
+  ],
+  "repair_material": "taiga:tritonite"
+}

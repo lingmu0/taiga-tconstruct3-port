@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:meteorite",
+  "result": {
+    "fluid": "taiga:molten_meteorite",
+    "amount": 90
+  },
+  "temperature": 950
+}

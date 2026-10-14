@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:taiga_alien",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

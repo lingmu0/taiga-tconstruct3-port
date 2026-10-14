@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_ignitz",
+    "amount": 90
+  },
+  "result": {
+    "item": "taiga:ignitz_ingot"
+  },
+  "cooling_time": 60,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  }
+}

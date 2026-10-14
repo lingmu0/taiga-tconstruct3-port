@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:iox_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:iox_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mmm",
+    "ccc"
+  ],
+  "key": {
+    "m": {
+      "item": "taiga:yrdeen_ingot"
+    },
+    "c": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "taiga:yrdeen_helmet"
+  }
+}

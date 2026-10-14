@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:prometheum_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:prometheum_ingot",
+    "count": 9
+  }
+}

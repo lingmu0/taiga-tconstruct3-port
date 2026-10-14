@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:nihilite_block"
+  },
+  "material": "taiga:nihilite",
+  "value": 9,
+  "needed": 1
+}

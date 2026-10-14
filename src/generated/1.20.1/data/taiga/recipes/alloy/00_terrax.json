@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "taiga:molten_karmesine",
+      "amount": 90
+    },
+    {
+      "fluid": "taiga:molten_ovium",
+      "amount": 90
+    },
+    {
+      "fluid": "taiga:molten_jauxum",
+      "amount": 90
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_terrax",
+    "amount": 180
+  },
+  "temperature": 750
+}

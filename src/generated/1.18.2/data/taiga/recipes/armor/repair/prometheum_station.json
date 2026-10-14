@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:prometheum_helmet"
+    },
+    {
+      "item": "taiga:prometheum_chestplate"
+    },
+    {
+      "item": "taiga:prometheum_leggings"
+    },
+    {
+      "item": "taiga:prometheum_boots"
+    }
+  ],
+  "repair_material": "taiga:prometheum"
+}

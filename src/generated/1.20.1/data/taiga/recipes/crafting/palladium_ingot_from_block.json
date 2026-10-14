@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:palladium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:palladium_ingot",
+    "count": 9
+  }
+}

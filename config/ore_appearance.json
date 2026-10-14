@@ -1,0 +1,10 @@
+{
+  "tiberium": {"host": "netherrack"},
+  "prometheum": {"host": "netherrack"},
+  "valyrium": {"host": "netherrack"},
+  "karmesine": {"host": "andesite"},
+  "jauxum": {"host": "granite"},
+  "ovium": {"host": "diorite"},
+  "vibranium": {"host": "stone", "deepslate": true},
+  "dilithium": {"host": "stone", "deepslate": true}
+}

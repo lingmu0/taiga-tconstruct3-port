@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:imperomite_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_imperomite",
+    "amount": 810
+  },
+  "temperature": 900,
+  "time": 180
+}

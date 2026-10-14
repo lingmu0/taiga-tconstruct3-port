@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:osram_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_osram",
+    "amount": 180
+  },
+  "temperature": 800,
+  "time": 120,
+  "rate": "metal"
+}

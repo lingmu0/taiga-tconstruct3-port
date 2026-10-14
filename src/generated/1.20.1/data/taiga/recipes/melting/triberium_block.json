@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:triberium_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_triberium",
+    "amount": 810
+  },
+  "temperature": 550,
+  "time": 180
+}

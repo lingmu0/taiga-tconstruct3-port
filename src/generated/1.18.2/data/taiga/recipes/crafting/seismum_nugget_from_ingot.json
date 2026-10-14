@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:seismum_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:seismum_nugget",
+    "count": 9
+  }
+}

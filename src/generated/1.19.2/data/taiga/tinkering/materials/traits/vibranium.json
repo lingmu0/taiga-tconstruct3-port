@@ -1,0 +1,29 @@
+{
+  "default": [],
+  "perStat": {
+    "tconstruct:handle": [
+      {
+        "name": "taiga:resonance",
+        "level": 1
+      }
+    ],
+    "tconstruct:head": [
+      {
+        "name": "taiga:heroic",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_reactive",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_deflection",
+        "level": 1
+      }
+    ]
+  }
+}

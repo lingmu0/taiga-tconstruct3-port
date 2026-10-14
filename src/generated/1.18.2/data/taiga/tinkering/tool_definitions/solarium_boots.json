@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "base": {
+      "tconstruct:durability": 572,
+      "tconstruct:armor": 2,
+      "tconstruct:armor_toughness": 2.5,
+      "tconstruct:knockback_resistance": 0.08
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.4
+    }
+  },
+  "slots": {
+    "upgrades": 2,
+    "defense": 3,
+    "abilities": 1
+  },
+  "traits": [
+    {
+      "name": "taiga:armor_natural",
+      "level": 1
+    },
+    {
+      "name": "taiga:armor_anchor",
+      "level": 1
+    }
+  ]
+}

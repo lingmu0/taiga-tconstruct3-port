@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:vibranium_ingot"
+  },
+  "material": "taiga:vibranium",
+  "value": 1,
+  "needed": 1
+}

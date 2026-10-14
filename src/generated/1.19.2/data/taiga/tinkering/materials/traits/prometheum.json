@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "name": "taiga:catcher",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:handle": [
+      {
+        "name": "taiga:catcher",
+        "level": 1
+      },
+      {
+        "name": "taiga:blind",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_venom",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_last_stand",
+        "level": 1
+      }
+    ]
+  }
+}

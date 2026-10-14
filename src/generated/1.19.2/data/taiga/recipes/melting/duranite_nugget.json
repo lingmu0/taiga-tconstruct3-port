@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/duranite"
+  },
+  "result": {
+    "fluid": "taiga:molten_duranite",
+    "amount": 10
+  },
+  "temperature": 1400,
+  "time": 20
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/jauxum"
+  },
+  "result": {
+    "fluid": "taiga:molten_jauxum",
+    "amount": 90
+  },
+  "temperature": 750,
+  "time": 60
+}

@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_prometheum",
+    "amount": 90
+  },
+  "result": {
+    "item": "taiga:prometheum_ingot"
+  },
+  "cooling_time": 60,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/ingot"
+  }
+}

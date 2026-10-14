@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:triberium_helmet"
+    },
+    {
+      "item": "taiga:triberium_chestplate"
+    },
+    {
+      "item": "taiga:triberium_leggings"
+    },
+    {
+      "item": "taiga:triberium_boots"
+    }
+  ],
+  "repair_material": "taiga:triberium"
+}

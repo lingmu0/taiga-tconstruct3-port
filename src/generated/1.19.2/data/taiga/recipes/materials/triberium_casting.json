@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_triberium",
+    "amount": 90
+  },
+  "output": "taiga:triberium",
+  "temperature": 550
+}

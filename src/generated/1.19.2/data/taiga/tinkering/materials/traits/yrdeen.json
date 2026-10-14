@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "name": "taiga:naturebound",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_natural",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_vitality",
+        "level": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "default": [],
+  "perStat": {
+    "tconstruct:handle": [
+      {
+        "name": "taiga:bright",
+        "level": 1
+      }
+    ],
+    "tconstruct:head": [
+      {
+        "name": "taiga:glimmer",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_radiant",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_arcane",
+        "level": 1
+      }
+    ]
+  }
+}

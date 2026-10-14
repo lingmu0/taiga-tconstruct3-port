@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:solarium_helmet"
+    },
+    {
+      "item": "taiga:solarium_chestplate"
+    },
+    {
+      "item": "taiga:solarium_leggings"
+    },
+    {
+      "item": "taiga:solarium_boots"
+    }
+  ],
+  "repair_material": "taiga:solarium"
+}

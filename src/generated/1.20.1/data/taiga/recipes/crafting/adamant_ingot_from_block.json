@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:adamant_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:adamant_ingot",
+    "count": 9
+  }
+}

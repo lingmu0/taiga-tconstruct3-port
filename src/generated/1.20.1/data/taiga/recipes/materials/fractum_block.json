@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:fractum_block"
+  },
+  "material": "taiga:fractum",
+  "value": 9,
+  "needed": 1
+}

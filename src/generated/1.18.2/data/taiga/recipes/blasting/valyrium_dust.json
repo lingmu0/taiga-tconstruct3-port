@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:valyrium_dust"
+  },
+  "result": "taiga:valyrium_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

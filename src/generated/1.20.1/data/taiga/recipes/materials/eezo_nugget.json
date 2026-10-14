@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:eezo_nugget"
+  },
+  "material": "taiga:eezo",
+  "value": 1,
+  "needed": 9
+}

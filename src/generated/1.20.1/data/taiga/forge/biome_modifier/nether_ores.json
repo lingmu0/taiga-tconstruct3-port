@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_nether",
+  "features": [
+    "taiga:tiberium_ore",
+    "taiga:prometheum_ore",
+    "taiga:valyrium_ore",
+    "taiga:osram_ore"
+  ],
+  "step": "underground_ores"
+}

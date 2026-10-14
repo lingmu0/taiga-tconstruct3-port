@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:duranite_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_duranite",
+    "amount": 180
+  },
+  "temperature": 1400,
+  "time": 120,
+  "rate": "metal"
+}

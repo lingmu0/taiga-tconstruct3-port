@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:dyonite_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_dyonite",
+    "amount": 810
+  },
+  "temperature": 660,
+  "time": 180
+}

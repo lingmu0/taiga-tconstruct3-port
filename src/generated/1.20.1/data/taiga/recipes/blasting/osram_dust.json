@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:osram_dust"
+  },
+  "result": "taiga:osram_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

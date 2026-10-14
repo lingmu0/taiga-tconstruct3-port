@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:deepslate_vibranium_ore"
+  },
+  "result": "taiga:vibranium_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

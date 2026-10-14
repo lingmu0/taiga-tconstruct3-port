@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:ignitz_helmet"
+    },
+    {
+      "item": "taiga:ignitz_chestplate"
+    },
+    {
+      "item": "taiga:ignitz_leggings"
+    },
+    {
+      "item": "taiga:ignitz_boots"
+    }
+  ],
+  "repair_material": "taiga:ignitz"
+}

@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "name": "taiga:melting",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:handle": [
+      {
+        "name": "taiga:melting",
+        "level": 1
+      },
+      {
+        "name": "taiga:garishly",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_heat_guard",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_reactive",
+        "level": 1
+      }
+    ]
+  }
+}

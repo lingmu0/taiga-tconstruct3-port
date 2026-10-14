@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:ovium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:ovium_ingot",
+    "count": 9
+  }
+}

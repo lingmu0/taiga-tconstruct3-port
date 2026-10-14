@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:vibranium_helmet"
+    },
+    {
+      "item": "taiga:vibranium_chestplate"
+    },
+    {
+      "item": "taiga:vibranium_leggings"
+    },
+    {
+      "item": "taiga:vibranium_boots"
+    }
+  ],
+  "repair_material": "taiga:vibranium"
+}

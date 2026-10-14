@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:terrax_helmet"
+    },
+    {
+      "item": "taiga:terrax_chestplate"
+    },
+    {
+      "item": "taiga:terrax_leggings"
+    },
+    {
+      "item": "taiga:terrax_boots"
+    }
+  ],
+  "repair_material": "taiga:terrax"
+}

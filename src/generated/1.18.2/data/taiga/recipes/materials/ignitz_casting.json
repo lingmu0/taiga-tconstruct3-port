@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_ignitz",
+    "amount": 90
+  },
+  "output": "taiga:ignitz",
+  "temperature": 950
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/karmesine"
+  },
+  "result": {
+    "fluid": "taiga:molten_karmesine",
+    "amount": 90
+  },
+  "temperature": 750,
+  "time": 60
+}

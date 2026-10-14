@@ -1,0 +1,26 @@
+{
+  "default": [
+    {
+      "name": "taiga:dark",
+      "level": 1
+    },
+    {
+      "name": "taiga:cursed",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_radiant",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_last_stand",
+        "level": 1
+      }
+    ]
+  }
+}

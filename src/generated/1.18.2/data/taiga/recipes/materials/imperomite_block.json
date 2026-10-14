@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:imperomite_block"
+  },
+  "material": "taiga:imperomite",
+  "value": 9,
+  "needed": 1
+}

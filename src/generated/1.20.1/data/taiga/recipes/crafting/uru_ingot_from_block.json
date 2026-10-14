@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:uru_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:uru_ingot",
+    "count": 9
+  }
+}

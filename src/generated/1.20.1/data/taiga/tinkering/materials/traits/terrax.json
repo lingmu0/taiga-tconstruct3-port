@@ -1,0 +1,22 @@
+{
+  "default": [
+    {
+      "name": "taiga:slaughtering",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_bulwark",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_cushion",
+        "level": 1
+      }
+    ]
+  }
+}

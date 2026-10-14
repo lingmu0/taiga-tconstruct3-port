@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "m m",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "taiga:tritonite_ingot"
+    }
+  },
+  "result": {
+    "item": "taiga:tritonite_boots"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/niob"
+  },
+  "result": {
+    "fluid": "taiga:molten_niob",
+    "amount": 10
+  },
+  "temperature": 550,
+  "time": 20
+}

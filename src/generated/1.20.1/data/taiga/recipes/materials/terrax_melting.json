@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:terrax",
+  "result": {
+    "fluid": "taiga:molten_terrax",
+    "amount": 90
+  },
+  "temperature": 850
+}

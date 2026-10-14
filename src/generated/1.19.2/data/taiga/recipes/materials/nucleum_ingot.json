@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:nucleum_ingot"
+  },
+  "material": "taiga:nucleum",
+  "value": 1,
+  "needed": 1
+}

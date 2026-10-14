@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:uru_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_uru",
+    "amount": 180
+  },
+  "temperature": 1200,
+  "time": 120,
+  "rate": "metal"
+}

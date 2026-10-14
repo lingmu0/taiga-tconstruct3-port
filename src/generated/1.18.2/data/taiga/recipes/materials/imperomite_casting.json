@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_imperomite",
+    "amount": 90
+  },
+  "output": "taiga:imperomite",
+  "temperature": 900
+}

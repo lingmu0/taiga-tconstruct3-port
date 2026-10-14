@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:uru_dust"
+  },
+  "result": "taiga:uru_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

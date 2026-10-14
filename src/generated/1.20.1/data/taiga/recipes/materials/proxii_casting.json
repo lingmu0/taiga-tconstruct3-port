@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_proxii",
+    "amount": 90
+  },
+  "output": "taiga:proxii",
+  "temperature": 750
+}

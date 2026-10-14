@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:arcane",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

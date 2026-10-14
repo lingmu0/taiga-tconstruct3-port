@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:imperomite_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:imperomite_nugget",
+    "count": 9
+  }
+}

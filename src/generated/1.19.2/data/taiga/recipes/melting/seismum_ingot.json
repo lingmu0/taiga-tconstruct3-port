@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/seismum"
+  },
+  "result": {
+    "fluid": "taiga:molten_seismum",
+    "amount": 90
+  },
+  "temperature": 720,
+  "time": 60
+}

@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:seismum_helmet"
+    },
+    {
+      "item": "taiga:seismum_chestplate"
+    },
+    {
+      "item": "taiga:seismum_leggings"
+    },
+    {
+      "item": "taiga:seismum_boots"
+    }
+  ],
+  "repair_material": "taiga:seismum"
+}

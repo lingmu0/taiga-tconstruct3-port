@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:imperomite_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:imperomite_ingot",
+    "count": 9
+  }
+}

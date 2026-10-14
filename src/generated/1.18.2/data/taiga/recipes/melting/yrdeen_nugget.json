@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/yrdeen"
+  },
+  "result": {
+    "fluid": "taiga:molten_yrdeen",
+    "amount": 10
+  },
+  "temperature": 710,
+  "time": 20
+}

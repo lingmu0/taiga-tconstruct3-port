@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:fractum_helmet"
+    },
+    {
+      "item": "taiga:fractum_chestplate"
+    },
+    {
+      "item": "taiga:fractum_leggings"
+    },
+    {
+      "item": "taiga:fractum_boots"
+    }
+  ],
+  "repair_material": "taiga:fractum"
+}

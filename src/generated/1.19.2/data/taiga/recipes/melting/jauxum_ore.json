@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:jauxum_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_jauxum",
+    "amount": 180
+  },
+  "temperature": 750,
+  "time": 120,
+  "rate": "metal"
+}

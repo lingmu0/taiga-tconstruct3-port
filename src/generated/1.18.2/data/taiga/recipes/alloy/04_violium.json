@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "fluid": "taiga:molten_aurorium",
+      "amount": 270
+    },
+    {
+      "fluid": "tconstruct:molten_hepatizon",
+      "amount": 180
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_violium",
+    "amount": 180
+  },
+  "temperature": 800
+}

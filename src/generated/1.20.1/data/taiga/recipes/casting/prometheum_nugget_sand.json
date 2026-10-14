@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_prometheum",
+    "amount": 10
+  },
+  "result": {
+    "item": "taiga:prometheum_nugget"
+  },
+  "cooling_time": 20,
+  "cast": {
+    "tag": "tconstruct:casts/single_use/nugget"
+  },
+  "cast_consumed": true
+}

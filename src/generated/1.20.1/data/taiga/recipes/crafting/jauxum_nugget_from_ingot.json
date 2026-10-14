@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:jauxum_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:jauxum_nugget",
+    "count": 9
+  }
+}

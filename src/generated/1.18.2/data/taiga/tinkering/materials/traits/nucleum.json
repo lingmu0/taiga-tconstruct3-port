@@ -1,0 +1,13 @@
+{
+  "default": [
+    {
+      "name": "taiga:decay",
+      "level": 1
+    },
+    {
+      "name": "taiga:mutate",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

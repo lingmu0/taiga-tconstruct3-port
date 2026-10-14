@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:osram_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:osram_ingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:vibranium_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_vibranium",
+    "amount": 810
+  },
+  "temperature": 1500,
+  "time": 180
+}

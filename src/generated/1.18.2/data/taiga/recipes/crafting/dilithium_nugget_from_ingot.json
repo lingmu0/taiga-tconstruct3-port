@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:dilithium_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:dilithium_nugget",
+    "count": 9
+  }
+}

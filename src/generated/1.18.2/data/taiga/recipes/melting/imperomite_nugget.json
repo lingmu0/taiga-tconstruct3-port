@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/imperomite"
+  },
+  "result": {
+    "fluid": "taiga:molten_imperomite",
+    "amount": 10
+  },
+  "temperature": 900,
+  "time": 20
+}

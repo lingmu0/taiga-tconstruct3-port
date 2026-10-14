@@ -1,0 +1,26 @@
+{
+  "default": [
+    {
+      "name": "taiga:decay",
+      "level": 1
+    },
+    {
+      "name": "taiga:mutate",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_venom",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_heat_guard",
+        "level": 1
+      }
+    ]
+  }
+}

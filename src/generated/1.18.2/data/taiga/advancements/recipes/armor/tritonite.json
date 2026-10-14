@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_material": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "taiga:tritonite_ingot"
+            ]
+          }
+        ]
+      }
+    },
+    "has_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "taiga:armor/building/tritonite_helmet"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_material",
+      "has_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "taiga:armor/building/tritonite_helmet",
+      "taiga:armor/building/tritonite_chestplate",
+      "taiga:armor/building/tritonite_leggings",
+      "taiga:armor/building/tritonite_boots"
+    ]
+  }
+}

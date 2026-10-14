@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_station_repair",
+  "tool": [
+    {
+      "item": "taiga:uru_helmet"
+    },
+    {
+      "item": "taiga:uru_chestplate"
+    },
+    {
+      "item": "taiga:uru_leggings"
+    },
+    {
+      "item": "taiga:uru_boots"
+    }
+  ],
+  "repair_material": "taiga:uru"
+}

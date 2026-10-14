@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_basalt",
+    "amount": 90
+  },
+  "output": "taiga:basalt",
+  "temperature": 550
+}

@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": [
+    "taiga:karmesine_ore",
+    "taiga:ovium_ore",
+    "taiga:jauxum_ore",
+    "taiga:eezo_ore",
+    "taiga:vibranium_ore",
+    "taiga:dilithium_ore",
+    "taiga:meteor"
+  ],
+  "step": "underground_ores"
+}

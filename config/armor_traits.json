@@ -1,0 +1,20 @@
+{
+  "bulwark":["Bulwark","壁垒","While worn, reduces direct melee damage by 3% per total level, up to 12%.","穿戴时，直接近战伤害每总等级降低3%，最高12%。"],
+  "heat_guard":["Heat Guard","隔热","While worn, reduces fire and lava damage by 4% per total level, up to 16%.","穿戴时，火焰与熔岩伤害每总等级降低4%，最高16%。"],
+  "deflection":["Deflection","偏折","While worn, reduces projectile damage by 4% per total level, up to 16%.","穿戴时，弹射物伤害每总等级降低4%，最高16%。"],
+  "anchor":["Anchored","锚定","While worn, grants 4% knockback resistance but reduces movement speed by 1% per total level; up to 4 levels.","穿戴时，每总等级增加4%击退抗性、降低1%移动速度；最多计4级。"],
+  "lightweight":["Light Step","轻步","While worn, increases movement speed by 2% per total level, up to 8%.","穿戴时，移动速度每总等级增加2%，最高8%。"],
+  "cushion":["Cushioning","缓冲","While worn, reduces fall damage by 6% per total level, up to 24%.","穿戴时，摔落伤害每总等级降低6%，最高24%。"],
+  "last_stand":["Last Stand","坚守","While worn below 40% health, reduces damage by 3% per total level, up to 12%.","穿戴且生命低于40%时，伤害每总等级降低3%，最高12%。"],
+  "reactive":["Reactive","反震","After taking direct melee damage, returns 0.5 damage per total level, up to 2; shared 1-second cooldown.","实际受到直接近战伤害后，每总等级向攻击者返还0.5点伤害，最高2点；共享1秒冷却。"],
+  "venom":["Venom Barbs","毒棘","After taking direct melee damage, has a 15% chance per total level (up to 60%) to poison the attacker for 3 seconds; shared 4-second cooldown.","实际受到直接近战伤害后，每总等级有15%概率使攻击者中毒3秒，最高60%；共享4秒冷却。"],
+  "radiant":["Radiance","辉光","While worn, grants night vision. It fades within 11 seconds after removal; additional levels do not stack.","穿戴时获得夜视，卸下后最多残留11秒；额外等级不叠加。"],
+  "natural":["Sunmending","光合","While worn under an open daytime sky, repairs this piece by 1 durability per level every 5 seconds; at most 2 per piece. Broken armor cannot self-repair.","穿戴且白天露天时，每5秒每级修复本件1点耐久，单件最多2点；损坏盔甲不能自修复。"],
+  "renewal":["Renewal","生息","Direct melee kills against hostile mobs heal 0.5 health per total level, up to 2; shared 5-second cooldown. Reflected damage does not trigger this.","直接近战击杀敌对生物后，每总等级恢复0.5点生命，最高2点；共享5秒冷却，反伤不触发。"],
+  "aquatic":["Gills","鳃息","While worn underwater, restores 4 air per total level each second, up to 16. Extends breathing time without granting immunity to drowning.","水下穿戴时，每秒每总等级补回4点氧气，最高16点；延长潜水时间，不能免疫溺水。"],
+  "vitality":["Vitality","活力","While worn, increases maximum health by 1 per total level, up to 4. Equipping does not heal.","穿戴时，每总等级增加1点生命上限，最高4点；穿戴不会直接回血。"],
+  "reinforced":["Enduring","坚固","Increases this armor piece's durability by 10% per level, up to 20%.","本件盔甲耐久每级增加10%，最高20%。"],
+  "volatile":["Uncertain Ward","游移","While worn, randomly reduces each hit by 0-3% per total level, up to 0-12%.","穿戴时，每次受伤随机减免0～每总等级3%的伤害，最高0～12%。"],
+  "arcane":["Runic Socket","符文槽","Adds 1 upgrade slot to this armor piece per level, up to 2.","本件盔甲每级增加1个升级槽，最多2个。"],
+  "composed":["Composure","从容","While worn at 90% health or more, reduces damage by 3% per total level, up to 12%.","穿戴且生命至少90%时，伤害每总等级降低3%，最高12%。"]
+}

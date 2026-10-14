@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/uru"
+  },
+  "result": {
+    "fluid": "taiga:molten_uru",
+    "amount": 90
+  },
+  "temperature": 1200,
+  "time": 60
+}

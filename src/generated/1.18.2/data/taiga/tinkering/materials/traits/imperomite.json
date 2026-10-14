@@ -1,0 +1,9 @@
+{
+  "default": [
+    {
+      "name": "taiga:hollow",
+      "level": 1
+    }
+  ],
+  "perStat": {}
+}

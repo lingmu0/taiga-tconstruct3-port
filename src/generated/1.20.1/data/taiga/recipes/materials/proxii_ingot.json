@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:proxii_ingot"
+  },
+  "material": "taiga:proxii",
+  "value": 1,
+  "needed": 1
+}

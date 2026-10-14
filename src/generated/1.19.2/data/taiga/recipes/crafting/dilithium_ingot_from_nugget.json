@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "taiga:dilithium_nugget"
+    }
+  },
+  "result": {
+    "item": "taiga:dilithium_ingot"
+  }
+}

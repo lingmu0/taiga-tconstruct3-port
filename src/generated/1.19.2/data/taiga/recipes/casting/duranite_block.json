@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "fluid": "taiga:molten_duranite",
+    "amount": 810
+  },
+  "result": {
+    "item": "taiga:duranite_block"
+  },
+  "cooling_time": 180
+}

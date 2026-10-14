@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "taiga:proxii_dust"
+  },
+  "result": "taiga:proxii_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}

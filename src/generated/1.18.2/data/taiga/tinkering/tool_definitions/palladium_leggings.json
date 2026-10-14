@@ -1,0 +1,28 @@
+{
+  "stats": {
+    "base": {
+      "tconstruct:durability": 435,
+      "tconstruct:armor": 5,
+      "tconstruct:armor_toughness": 1.0,
+      "tconstruct:knockback_resistance": 0.0
+    },
+    "multipliers": {
+      "tconstruct:attack_damage": 0.4
+    }
+  },
+  "slots": {
+    "upgrades": 2,
+    "defense": 3,
+    "abilities": 1
+  },
+  "traits": [
+    {
+      "name": "taiga:armor_radiant",
+      "level": 1
+    },
+    {
+      "name": "taiga:armor_last_stand",
+      "level": 1
+    }
+  ]
+}

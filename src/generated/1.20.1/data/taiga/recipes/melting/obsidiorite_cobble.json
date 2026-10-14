@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:obsidioritecobble_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_obsidiorite",
+    "amount": 810
+  },
+  "temperature": 1050,
+  "time": 180
+}

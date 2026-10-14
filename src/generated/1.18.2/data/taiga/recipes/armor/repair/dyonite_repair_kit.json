@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:dyonite_helmet"
+    },
+    {
+      "item": "taiga:dyonite_chestplate"
+    },
+    {
+      "item": "taiga:dyonite_leggings"
+    },
+    {
+      "item": "taiga:dyonite_boots"
+    }
+  ],
+  "repair_material": "taiga:dyonite"
+}

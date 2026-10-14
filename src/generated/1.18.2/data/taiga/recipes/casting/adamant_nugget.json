@@ -1,0 +1,14 @@
+{
+  "type": "tconstruct:casting_table",
+  "fluid": {
+    "fluid": "taiga:molten_adamant",
+    "amount": 10
+  },
+  "result": {
+    "item": "taiga:adamant_nugget"
+  },
+  "cooling_time": 20,
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/nugget"
+  }
+}

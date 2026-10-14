@@ -1,0 +1,11 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "fluid": "taiga:molten_vibranium",
+    "amount": 810
+  },
+  "result": {
+    "item": "taiga:vibranium_block"
+  },
+  "cooling_time": 180
+}

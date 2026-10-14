@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:deepslate_dilithium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_dilithium",
+    "amount": 180
+  },
+  "temperature": 1500,
+  "time": 150,
+  "rate": "metal"
+}

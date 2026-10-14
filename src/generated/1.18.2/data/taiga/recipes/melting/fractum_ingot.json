@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:ingots/fractum"
+  },
+  "result": {
+    "fluid": "taiga:molten_fractum",
+    "amount": 90
+  },
+  "temperature": 750,
+  "time": 60
+}

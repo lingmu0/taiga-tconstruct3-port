@@ -1,0 +1,32 @@
+{
+  "default": [
+    {
+      "name": "taiga:pulverizing",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "name": "taiga:pulverizing",
+        "level": 1
+      },
+      {
+        "name": "taiga:taiga_crumbling",
+        "level": 1
+      }
+    ],
+    "tconstruct:armor": [
+      {
+        "name": "taiga:armor_bulwark",
+        "level": 1
+      }
+    ],
+    "tconstruct:maille": [
+      {
+        "name": "taiga:armor_heat_guard",
+        "level": 1
+      }
+    ]
+  }
+}

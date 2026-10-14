@@ -1,0 +1,1003 @@
+[
+  {
+    "name": "basalt",
+    "color": "E4DDC3",
+    "temperature": 550,
+    "tool": {
+      "durability": 200,
+      "speed": 3.0,
+      "attack": 2.5,
+      "handle": 0.5,
+      "tier": "minecraft:stone",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:iron",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:softy",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "tiberium",
+    "color": "D4FF00",
+    "temperature": 500,
+    "tool": {
+      "durability": 80,
+      "speed": 3.3,
+      "attack": 4.0,
+      "handle": 0.7,
+      "tier": "minecraft:diamond",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:iron",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:unstable",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "aurorium",
+    "color": "EFAE94",
+    "temperature": 750,
+    "tool": {
+      "durability": 750,
+      "speed": 3.6,
+      "attack": 3.78,
+      "handle": 0.77,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.45,
+        "range": 1.0,
+        "bonus": 1.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:arcane",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "prometheum",
+    "color": "372C49",
+    "temperature": 850,
+    "tool": {
+      "durability": 844,
+      "speed": 4.75,
+      "attack": 6.6,
+      "handle": 1.2,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.6,
+        "bonus": 3.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:catcher",
+          "level": 1
+        }
+      ],
+      "perStat": {
+        "tconstruct:handle": [
+          {
+            "name": "taiga:blind",
+            "level": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "duranite",
+    "color": "ACDDEB",
+    "temperature": 1400,
+    "tool": {
+      "durability": 1550,
+      "speed": 3.2,
+      "attack": 3.2,
+      "handle": 1.16,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 0.3,
+        "range": 1.4,
+        "bonus": 2.0
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:analysing",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "valyrium",
+    "color": "E85C31",
+    "temperature": 1500,
+    "tool": {
+      "durability": 1111,
+      "speed": 5.37,
+      "attack": 4.8,
+      "handle": 1.3,
+      "tier": "taiga:valyrium",
+      "bow": {
+        "draw": 1.1,
+        "range": 1.2,
+        "bonus": 4.0
+      }
+    },
+    "ore_tier": "taiga:valyrium",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:congenial",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "vibranium",
+    "color": "BAD2D9",
+    "temperature": 1500,
+    "tool": {
+      "durability": 1235,
+      "speed": 7.62,
+      "attack": 8.1,
+      "handle": 1.3,
+      "tier": "taiga:vibranium",
+      "bow": {
+        "draw": 1.1,
+        "range": 1.8,
+        "bonus": 4.0
+      }
+    },
+    "ore_tier": "taiga:vibranium",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {
+        "tconstruct:handle": [
+          {
+            "name": "taiga:resonance",
+            "level": 1
+          }
+        ],
+        "tconstruct:head": [
+          {
+            "name": "taiga:heroic",
+            "level": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "karmesine",
+    "color": "EB484A",
+    "temperature": 750,
+    "tool": null,
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "jauxum",
+    "color": "68C663",
+    "temperature": 750,
+    "tool": null,
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "ovium",
+    "color": "7D77C3",
+    "temperature": 750,
+    "tool": null,
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "terrax",
+    "color": "A5978E",
+    "temperature": 850,
+    "tool": {
+      "durability": 444,
+      "speed": 4.77,
+      "attack": 2.9,
+      "handle": 0.8,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:slaughtering",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "palladium",
+    "color": "EE8736",
+    "temperature": 690,
+    "tool": {
+      "durability": 797,
+      "speed": 4.35,
+      "attack": 6.8,
+      "handle": 1.3,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 0.5,
+        "range": 0.2,
+        "bonus": 3.0
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:dark",
+          "level": 1
+        },
+        {
+          "name": "taiga:cursed",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "uru",
+    "color": "BFB9F0",
+    "temperature": 1200,
+    "tool": {
+      "durability": 877,
+      "speed": 2.0,
+      "attack": 7.2,
+      "handle": 1.5,
+      "tier": "taiga:valyrium",
+      "bow": {
+        "draw": 1.3,
+        "range": 0.8,
+        "bonus": 6.0
+      }
+    },
+    "ore_tier": "taiga:valyrium",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:diffuse",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "osram",
+    "color": "FFBC90",
+    "temperature": 800,
+    "tool": null,
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "abyssum",
+    "color": "21BCC2",
+    "temperature": 700,
+    "tool": null,
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "eezo",
+    "color": "58798A",
+    "temperature": 500,
+    "tool": {
+      "durability": 50,
+      "speed": 23.0,
+      "attack": 3.5,
+      "handle": 0.1,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": true,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:dissolving",
+          "level": 1
+        },
+        {
+          "name": "taiga:superheavy",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "triberium",
+    "color": "66F136",
+    "temperature": 550,
+    "tool": {
+      "durability": 223,
+      "speed": 6.2,
+      "attack": 8.35,
+      "handle": 0.63,
+      "tier": "minecraft:diamond",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:fragile",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "fractum",
+    "color": "D2C583",
+    "temperature": 750,
+    "tool": {
+      "durability": 538,
+      "speed": 5.71,
+      "attack": 6.93,
+      "handle": 0.88,
+      "tier": "minecraft:diamond",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore": false,
+    "ore_tier": "minecraft:diamond",
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:fracture",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "violium",
+    "color": "BFB0E2",
+    "temperature": 850,
+    "tool": {
+      "durability": 925,
+      "speed": 3.8,
+      "attack": 3.75,
+      "handle": 0.9,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.45,
+        "range": 0.95,
+        "bonus": 1.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:arcane",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "proxii",
+    "color": "CEFDE1",
+    "temperature": 750,
+    "tool": {
+      "durability": 625,
+      "speed": 6.8,
+      "attack": 4.21,
+      "handle": 1.25,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 0.35,
+        "range": 0.5,
+        "bonus": 3.0
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:curvature",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "tritonite",
+    "color": "8EDEFF",
+    "temperature": 550,
+    "tool": {
+      "durability": 780,
+      "speed": 8.0,
+      "attack": 3.3,
+      "handle": 1.45,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:whirl",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "ignitz",
+    "color": "FF284B",
+    "temperature": 950,
+    "tool": {
+      "durability": 350,
+      "speed": 2.0,
+      "attack": 6.66,
+      "handle": 0.85,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.8,
+        "range": 0.8,
+        "bonus": 3.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:melting",
+          "level": 1
+        }
+      ],
+      "perStat": {
+        "tconstruct:handle": [
+          {
+            "name": "taiga:garishly",
+            "level": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "imperomite",
+    "color": "7FEFA0",
+    "temperature": 900,
+    "tool": {
+      "durability": 1350,
+      "speed": 4.65,
+      "attack": 5.9,
+      "handle": 1.15,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 1.2,
+        "range": 1.8,
+        "bonus": 2.0
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:hollow",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "solarium",
+    "color": "FEF864",
+    "temperature": 1500,
+    "tool": {
+      "durability": 1100,
+      "speed": 24.0,
+      "attack": 7.0,
+      "handle": 1.25,
+      "tier": "taiga:vibranium",
+      "bow": {
+        "draw": 0.8,
+        "range": 1.5,
+        "bonus": 5.0
+      }
+    },
+    "ore_tier": "taiga:vibranium",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:superheavy",
+          "level": 1
+        },
+        {
+          "name": "taiga:crushing",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "nihilite",
+    "color": "6645BA",
+    "temperature": 580,
+    "tool": {
+      "durability": 400,
+      "speed": 2.8,
+      "attack": 4.5,
+      "handle": 0.77,
+      "tier": "taiga:valyrium",
+      "bow": {
+        "draw": 1.5,
+        "range": 0.8,
+        "bonus": 3.0
+      }
+    },
+    "ore_tier": "taiga:valyrium",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:souleater",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "adamant",
+    "color": "FF8EFE",
+    "temperature": 1500,
+    "tool": {
+      "durability": 1750,
+      "speed": 6.0,
+      "attack": 6.0,
+      "handle": 2.0,
+      "tier": "taiga:vibranium",
+      "bow": {
+        "draw": 0.35,
+        "range": 1.85,
+        "bonus": 8.0
+      }
+    },
+    "ore_tier": "taiga:vibranium",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:berserk",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "dyonite",
+    "color": "FFBD3F",
+    "temperature": 660,
+    "tool": {
+      "durability": 900,
+      "speed": 6.45,
+      "attack": 5.0,
+      "handle": 0.66,
+      "tier": "taiga:duranite",
+      "bow": {
+        "draw": 2.0,
+        "range": 0.9,
+        "bonus": -1.0
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:tantrum",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "nucleum",
+    "color": "E6FF40",
+    "temperature": 500,
+    "tool": {
+      "durability": 505,
+      "speed": 17.5,
+      "attack": 9.5,
+      "handle": 1.05,
+      "tier": "taiga:valyrium",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "taiga:valyrium",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:decay",
+          "level": 1
+        },
+        {
+          "name": "taiga:mutate",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "lumix",
+    "color": "F9F3CC",
+    "temperature": 500,
+    "tool": {
+      "durability": 666,
+      "speed": 3.84,
+      "attack": 3.92,
+      "handle": 0.85,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.8,
+        "range": 1.3,
+        "bonus": 1.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [],
+      "perStat": {
+        "tconstruct:handle": [
+          {
+            "name": "taiga:bright",
+            "level": 1
+          }
+        ],
+        "tconstruct:head": [
+          {
+            "name": "taiga:glimmer",
+            "level": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "seismum",
+    "color": "ECBCA8",
+    "temperature": 720,
+    "tool": {
+      "durability": 780,
+      "speed": 3.66,
+      "attack": 6.05,
+      "handle": 0.95,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:cascade",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "astrium",
+    "color": "8F385F",
+    "temperature": 680,
+    "tool": {
+      "durability": 750,
+      "speed": 8.35,
+      "attack": 5.4,
+      "handle": 0.95,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.7,
+        "range": 0.8,
+        "bonus": 2.0
+      }
+    },
+    "ore_tier": "minecraft:netherite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:ported",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "niob",
+    "color": "7398B9",
+    "temperature": 550,
+    "tool": {
+      "durability": 700,
+      "speed": 4.5,
+      "attack": 4.5,
+      "handle": 2.0,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "taiga:duranite",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:reviving",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "yrdeen",
+    "color": "8F385F",
+    "temperature": 710,
+    "tool": {
+      "durability": 999,
+      "speed": 9.1,
+      "attack": 3.0,
+      "handle": 1.35,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore_tier": "taiga:valyrium",
+    "ore": false,
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:naturebound",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "iox",
+    "color": "99323C",
+    "temperature": 900,
+    "tool": null,
+    "ore_tier": "taiga:duranite",
+    "ore": false,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "meteorite",
+    "color": "374F3D",
+    "temperature": 950,
+    "tool": {
+      "durability": 1500,
+      "speed": 1.5,
+      "attack": 1.5,
+      "handle": 0.5,
+      "tier": "minecraft:diamond",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore": false,
+    "ore_tier": "minecraft:diamond",
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:pulverizing",
+          "level": 1
+        }
+      ],
+      "perStat": {
+        "tconstruct:head": [
+          {
+            "name": "taiga:taiga_crumbling",
+            "level": 1
+          }
+        ]
+      }
+    }
+  },
+  {
+    "name": "obsidiorite",
+    "color": "224853",
+    "temperature": 1050,
+    "tool": {
+      "durability": 1500,
+      "speed": 0.5,
+      "attack": 0.5,
+      "handle": 1.0,
+      "tier": "minecraft:netherite",
+      "bow": {
+        "draw": 0.2,
+        "range": 0.4,
+        "bonus": -1
+      }
+    },
+    "ore": false,
+    "ore_tier": "minecraft:netherite",
+    "traits": {
+      "default": [
+        {
+          "name": "taiga:taiga_alien",
+          "level": 1
+        }
+      ],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "magma",
+    "color": "FFC000",
+    "temperature": 1500,
+    "tool": null,
+    "ore": false,
+    "ore_tier": "minecraft:netherite",
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "nitronite",
+    "color": "CCFF00",
+    "temperature": 1500,
+    "tool": null,
+    "ore": false,
+    "ore_tier": "minecraft:netherite",
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  },
+  {
+    "name": "dilithium",
+    "color": "79AEA6",
+    "temperature": 1500,
+    "tool": null,
+    "ore_tier": "minecraft:diamond",
+    "ore": true,
+    "traits": {
+      "default": [],
+      "perStat": {}
+    }
+  }
+]

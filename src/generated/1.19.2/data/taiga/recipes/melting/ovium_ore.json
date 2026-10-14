@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:ovium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_ovium",
+    "amount": 180
+  },
+  "temperature": 750,
+  "time": 120,
+  "rate": "metal"
+}

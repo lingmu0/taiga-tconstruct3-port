@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "taiga:vibranium_dust"
+  },
+  "result": "taiga:vibranium_ingot",
+  "experience": 0.7,
+  "cookingtime": 100
+}

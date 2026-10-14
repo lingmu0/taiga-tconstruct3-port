@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:meteorite_helmet"
+    },
+    {
+      "item": "taiga:meteorite_chestplate"
+    },
+    {
+      "item": "taiga:meteorite_leggings"
+    },
+    {
+      "item": "taiga:meteorite_boots"
+    }
+  ],
+  "repair_material": "taiga:meteorite"
+}

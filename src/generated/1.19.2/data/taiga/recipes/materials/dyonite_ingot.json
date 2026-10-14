@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:dyonite_ingot"
+  },
+  "material": "taiga:dyonite",
+  "value": 1,
+  "needed": 1
+}

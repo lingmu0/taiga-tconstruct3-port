@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:aurorium_block"
+    }
+  ],
+  "result": {
+    "item": "taiga:aurorium_ingot",
+    "count": 9
+  }
+}

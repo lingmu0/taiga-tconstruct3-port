@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/tritonite"
+  },
+  "result": {
+    "fluid": "taiga:molten_tritonite",
+    "amount": 10
+  },
+  "temperature": 550,
+  "time": 20
+}

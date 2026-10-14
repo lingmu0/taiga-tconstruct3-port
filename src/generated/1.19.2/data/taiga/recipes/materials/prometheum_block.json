@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:prometheum_block"
+  },
+  "material": "taiga:prometheum",
+  "value": 9,
+  "needed": 1
+}

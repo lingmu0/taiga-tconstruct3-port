@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:ignitz_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_ignitz",
+    "amount": 810
+  },
+  "temperature": 950,
+  "time": 180
+}

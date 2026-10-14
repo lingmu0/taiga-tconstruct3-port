@@ -1,0 +1,20 @@
+{
+  "default": [
+    {
+      "name": "taiga:pulverizing",
+      "level": 1
+    }
+  ],
+  "perStat": {
+    "tconstruct:head": [
+      {
+        "name": "taiga:pulverizing",
+        "level": 1
+      },
+      {
+        "name": "taiga:taiga_crumbling",
+        "level": 1
+      }
+    ]
+  }
+}

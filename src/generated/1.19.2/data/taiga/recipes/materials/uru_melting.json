@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:uru",
+  "result": {
+    "fluid": "taiga:molten_uru",
+    "amount": 90
+  },
+  "temperature": 1200
+}

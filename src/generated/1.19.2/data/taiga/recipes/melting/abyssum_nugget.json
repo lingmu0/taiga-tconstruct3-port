@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/abyssum"
+  },
+  "result": {
+    "fluid": "taiga:molten_abyssum",
+    "amount": 10
+  },
+  "temperature": 700,
+  "time": 20
+}

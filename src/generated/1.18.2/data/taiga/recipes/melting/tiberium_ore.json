@@ -1,0 +1,13 @@
+{
+  "type": "tconstruct:ore_melting",
+  "ingredient": {
+    "item": "taiga:tiberium_ore"
+  },
+  "result": {
+    "fluid": "taiga:molten_tiberium",
+    "amount": 180
+  },
+  "temperature": 500,
+  "time": 120,
+  "rate": "metal"
+}

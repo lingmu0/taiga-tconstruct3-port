@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:specialized_repair_kit",
+  "tool": [
+    {
+      "item": "taiga:proxii_helmet"
+    },
+    {
+      "item": "taiga:proxii_chestplate"
+    },
+    {
+      "item": "taiga:proxii_leggings"
+    },
+    {
+      "item": "taiga:proxii_boots"
+    }
+  ],
+  "repair_material": "taiga:proxii"
+}

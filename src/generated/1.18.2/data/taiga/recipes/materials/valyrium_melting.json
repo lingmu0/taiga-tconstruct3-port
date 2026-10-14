@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "taiga:valyrium",
+  "result": {
+    "fluid": "taiga:molten_valyrium",
+    "amount": 90
+  },
+  "temperature": 1500
+}

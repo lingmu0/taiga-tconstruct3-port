@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:dusts/violium"
+  },
+  "result": {
+    "fluid": "taiga:molten_violium",
+    "amount": 90
+  },
+  "temperature": 850,
+  "time": 60
+}

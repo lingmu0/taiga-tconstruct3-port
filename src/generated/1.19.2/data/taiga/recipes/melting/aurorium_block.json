@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:aurorium_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_aurorium",
+    "amount": 810
+  },
+  "temperature": 750,
+  "time": 180
+}

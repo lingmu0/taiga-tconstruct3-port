@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material",
+  "ingredient": {
+    "item": "taiga:valyrium_block"
+  },
+  "material": "taiga:valyrium",
+  "value": 9,
+  "needed": 1
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "taiga:adamant_block",
+    "taiga:deepslate_vibranium_ore",
+    "taiga:solarium_block",
+    "taiga:vibranium_block",
+    "taiga:vibranium_ore"
+  ]
+}

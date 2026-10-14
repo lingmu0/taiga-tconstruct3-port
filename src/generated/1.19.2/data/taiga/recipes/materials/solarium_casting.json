@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_fluid",
+  "fluid": {
+    "fluid": "taiga:molten_solarium",
+    "amount": 90
+  },
+  "output": "taiga:solarium",
+  "temperature": 1500
+}

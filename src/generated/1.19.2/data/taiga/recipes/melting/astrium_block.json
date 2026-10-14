@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "item": "taiga:astrium_block"
+  },
+  "result": {
+    "fluid": "taiga:molten_astrium",
+    "amount": 810
+  },
+  "temperature": 680,
+  "time": 180
+}

@@ -1,0 +1,53 @@
+{
+  "stats": {
+    "tconstruct:head": {
+      "durability": 900,
+      "mining_speed": 6.45,
+      "melee_attack": 5.0,
+      "mining_tier": "taiga:duranite"
+    },
+    "tconstruct:handle": {
+      "durability": -0.34,
+      "mining_speed": 0.0,
+      "melee_speed": 0.0,
+      "melee_damage": 0.0
+    },
+    "tconstruct:binding": {},
+    "tconstruct:limb": {
+      "durability": 900,
+      "draw_speed": 1.0,
+      "velocity": -0.1,
+      "accuracy": 0.0
+    },
+    "tconstruct:grip": {
+      "durability": -0.34,
+      "accuracy": 0.0,
+      "melee_damage": 5.0
+    },
+    "tconstruct:plating_helmet": {
+      "durability": 374,
+      "armor": 2,
+      "toughness": 1.5,
+      "knockback_resistance": 0.03
+    },
+    "tconstruct:plating_chestplate": {
+      "durability": 544,
+      "armor": 6,
+      "toughness": 1.5,
+      "knockback_resistance": 0.03
+    },
+    "tconstruct:plating_leggings": {
+      "durability": 510,
+      "armor": 5,
+      "toughness": 1.5,
+      "knockback_resistance": 0.03
+    },
+    "tconstruct:plating_boots": {
+      "durability": 442,
+      "armor": 2,
+      "toughness": 1.5,
+      "knockback_resistance": 0.03
+    },
+    "tconstruct:maille": {}
+  }
+}

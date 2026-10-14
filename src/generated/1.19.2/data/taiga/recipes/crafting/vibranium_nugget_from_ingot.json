@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "taiga:vibranium_ingot"
+    }
+  ],
+  "result": {
+    "item": "taiga:vibranium_nugget",
+    "count": 9
+  }
+}
