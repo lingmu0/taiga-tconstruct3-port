@@ -44,3 +44,9 @@ includes the complete configuration template, generator and regression checks.
 
 Tinkers' Construct and Mantle are separate, required dependencies. Their binaries
 are not included in the TAIGA mod or the corresponding-source distribution.
+
+Project cover update, dated 2026-10-15: a derivative of the user-supplied
+original TAIGA square logo, with a lowercase "port" subtitle added using the
+built-in image_gen tool. The reference and exact prompt are retained under
+art/source/ and publication/. Original TAIGA artwork credits and GPLv3 notices
+continue to apply.

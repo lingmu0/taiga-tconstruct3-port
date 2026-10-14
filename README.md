@@ -1,8 +1,12 @@
 # TAIGA：匠魂合金附加，Forge / 匠魂 3 非官方移植
 
+<img src="publication/taiga-port.png" alt="TAIGA port" width="200" height="200">
+
 原版 [Tinkers Alloying Addon](https://somegit.dev/TAIGA/TAIGA) 采用 GPLv3，允许修改、移植和再分发。此移植继续使用 GPL-3.0-only，保留原作者声明；分发二进制时须同时提供对应源码。详见 [LICENSE](LICENSE) 和 [NOTICE.md](NOTICE.md)。这是独立的非官方移植。
 
 Public source: [lingmu0/taiga-tconstruct3-port](https://github.com/lingmu0/taiga-tconstruct3-port). See [releases](https://github.com/lingmu0/taiga-tconstruct3-port/releases) for matching Forge jars, GPL corresponding source and the numeric configuration template.
+
+[CurseForge 项目](https://www.curseforge.com/minecraft/mc-mods/taiga-tconstruct3-port)（项目 ID：1744942）：2026-10-15 已提交三个版本的 Beta 文件，设置为审核通过后自动发布，并开启评论和第三方分发。审核状态以 CurseForge 页面为准。
 
 ## 安装
 
@@ -79,4 +83,4 @@ python tools/verify_resources.py
 
 当前 `port.5` 使用表中的较低依赖组合执行三个版本的 Java 编译、Forge 混淆打包、资源引用和数据结构检查、进阶可达性检查及成品资源一致性检查。盔甲检查包含 30 种材料数据与词条、原生部件配方入口、1.18.2 合成／修复和标签继承，以及对 port.3 工具属性的回归对比。纯 Java 数值测试覆盖 5259 个伤害类型、生命阈值、混搭、上限和自定义配置场景；检查非法修改的原子拒绝和默认值恢复，不加载游戏。额外检查 126 项配置与实际逻辑的完整对应、TOML 模板和翻译。
 
-保留流体／等级翻译、深层矿石、零素生成和原有配方检查。最低匠魂版本中的外部模型、铸模标签及调色板格式也参与校验。没有启动 Minecraft，因此尚未实测盔甲穿戴画面、战斗交互、宝典页面、世界生成和联机行为。
+保留流体／等级翻译、深层矿石、零素生成和原有配方检查。最低匠魂版本中的外部模型、铸模标签及调色板格式也参与校验。1.20.1 客户端已启动并完成资源加载，游戏画面、盔甲穿戴、战斗交互、宝典页面、世界生成和联机行为仍待实测；1.18.2／1.19.2 尚未进行游戏内验证。

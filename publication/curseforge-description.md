@@ -36,7 +36,9 @@ The mod's own Forge loader range starts at the corresponding major version. Depe
 ## Source and license
 
 - [Public source repository](https://github.com/lingmu0/taiga-tconstruct3-port)
-- [Matching source archives and configuration template](https://github.com/lingmu0/taiga-tconstruct3-port/releases)
+- [Report an issue](https://github.com/lingmu0/taiga-tconstruct3-port/issues)
+- [Source for this build](https://github.com/lingmu0/taiga-tconstruct3-port/tree/v2.0.0-port.5)
+- [Configuration template](https://github.com/lingmu0/taiga-tconstruct3-port/blob/v2.0.0-port.5/config/taiga-traits.toml)
 - [Original TAIGA source](https://somegit.dev/TAIGA/TAIGA)
 - License: **GPL-3.0-only**. Original author notices and the license are retained. Modpacks and third-party downloads are permitted under the license.
 

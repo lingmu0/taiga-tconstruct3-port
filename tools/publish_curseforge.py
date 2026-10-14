@@ -44,7 +44,7 @@ def main():
     version = json.loads((ROOT/'config/compatibility.json').read_text())['mod_version']
     changelog = (ROOT/'CHANGELOG.md').read_text(encoding='utf-8')
     changelog += '\n\nConfiguration: https://github.com/lingmu0/taiga-tconstruct3-port/blob/main/CONFIGURATION.md\n'
-    changelog += '\nMatching source: https://github.com/lingmu0/taiga-tconstruct3-port/releases/tag/v'+version+'\n'
+    changelog += '\nMatching source: https://github.com/lingmu0/taiga-tconstruct3-port/tree/v'+version+'\n'
     receipts_path = ROOT/'build/publication/curseforge-uploads.local.json'
     receipts = json.loads(receipts_path.read_text()) if receipts_path.exists() else {}
     for mc in ('1.18.2','1.19.2','1.20.1'):

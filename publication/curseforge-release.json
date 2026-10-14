@@ -1,0 +1,29 @@
+{
+  "projectId": 1744942,
+  "slug": "taiga-tconstruct3-port",
+  "version": "2.0.0-port.5",
+  "submittedDate": "2026-10-15",
+  "releaseType": "beta",
+  "automaticReleaseAfterApproval": true,
+  "projectModeration": "not yet approved at submission",
+  "files": [
+    {
+      "minecraft": "1.18.2",
+      "fileName": "taiga-1.18.2-forge-2.0.0-port.5.jar",
+      "fileId": 9175594,
+      "sha256": "d7ff9ac1290f554262a81848ceb0433ce2f12885a2862ce5828cfbd55d9165a1"
+    },
+    {
+      "minecraft": "1.19.2",
+      "fileName": "taiga-1.19.2-forge-2.0.0-port.5.jar",
+      "fileId": 9175555,
+      "sha256": "e6dbfcee21b8a912f580039fd909e0ebeafc42abd1eafd0faa7e5c9bdb7fcd72"
+    },
+    {
+      "minecraft": "1.20.1",
+      "fileName": "taiga-1.20.1-forge-2.0.0-port.5.jar",
+      "fileId": 9175417,
+      "sha256": "fedc5a0e6e6ae64a240670e51e8f1a1de2406770ad48592a884580ef95eb9f6c"
+    }
+  ]
+}
