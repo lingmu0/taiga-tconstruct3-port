@@ -16,6 +16,8 @@ ARMOR_MATERIALS = json.loads((ROOT / 'config/armor_materials.json').read_text(en
 ARMOR_TRAITS = json.loads((ROOT / 'config/armor_traits.json').read_text(encoding='utf-8'))
 ALL_MODIFIERS = set(TRAITS) | {'armor_'+trait for trait in ARMOR_TRAITS}
 ORE_APPEARANCE = json.loads((ROOT / 'config/ore_appearance.json').read_text(encoding='utf-8'))
+TRAIT_COLORS = json.loads((ROOT / 'config/trait_colors.json').read_text(encoding='utf-8'))
+SPECIAL_DEPOSITS = json.loads((ROOT / 'config/special_deposits.json').read_text(encoding='utf-8'))
 DEEPSLATE = {name for name, appearance in ORE_APPEARANCE.items() if appearance.get('deepslate')}
 LEVELS = {'minecraft:stone':1,'minecraft:iron':2,'minecraft:diamond':3,'minecraft:netherite':4,
           'taiga:duranite':5,'taiga:valyrium':6,'taiga:vibranium':7}
@@ -111,6 +113,57 @@ def ore_changes(root, old):
         for name in DEEPSLATE: assert f'Blocks.DEEPSLATE), Taiga.block("deepslate_{name}_ore")' in native
         platform = (ROOT / 'src/platform/1.18.2/java/com/sosnitzka/taiga/Platform.java').read_text()
         assert 'Dist.CLIENT' in platform and 'RenderType.cutoutMipped()' in platform
+
+def colors_and_machine_recipes(root, old):
+    assets, data = root / 'assets/taiga', root / 'data/taiga'
+    colors = load(assets / 'mantle/colors.json')
+    expected_colors = {**TRAIT_COLORS['tools'], **{'armor_'+key:value for key,value in TRAIT_COLORS['armor'].items()}}
+    assert set(expected_colors) == ALL_MODIFIERS
+    assert colors['modifier.taiga'] == expected_colors
+    assert all(re.fullmatch(r'#[0-9A-Fa-f]{6}', value) and value.lower() != '#ffffff' for value in expected_colors.values())
+    assert expected_colors['berserk'] == '#FF5555' and expected_colors['naturebound'] == '#55FF55'
+    assert expected_colors['resonance'] == '#55FFFF' and expected_colors['armor_venom'] == '#79BD50'
+
+    recipe_root = data / 'recipes/compat'
+    expected_paths = set()
+    def check(kind, source, output, input_count=1, output_count=1):
+        modid = 'thermal_expansion' if kind == 'thermal' else 'mekanism'
+        path = recipe_root / modid / kind / (source + '.json')
+        expected_paths.add(path)
+        value = load(path)
+        assert value['conditions'] == [{'type':'forge:mod_loaded','modid':modid}]
+        result = {'item':'taiga:'+output}
+        if output_count != 1: result['count'] = output_count
+        if kind == 'thermal':
+            ingredient = {'item':'taiga:'+source}
+            if input_count != 1: ingredient['count'] = input_count
+            assert value['type'] == 'thermal:pulverizer'
+            assert value['ingredient'] == ingredient and value['result'] == [result]
+        else:
+            ingredient = {'ingredient':{'item':'taiga:'+source}}
+            if input_count != 1: ingredient['amount'] = input_count
+            assert value['type'] == 'mekanism:'+kind
+            assert value['input'] == ingredient and value['output'] == result
+    for material in SOLID:
+        name = material['name']
+        for kind in ('crushing','thermal'): check(kind, name+'_ingot', name+'_dust')
+        if material['ore']:
+            ores = [name+'_ore'] + (['deepslate_'+name+'_ore'] if name in DEEPSLATE else [])
+            for ore in ores:
+                for kind in ('enriching','crushing','thermal'): check(kind, ore, name+'_dust', output_count=2)
+    for name in ('tiberium','dilithium'):
+        for kind in ('crushing','thermal'): check(kind, name+'_crystal', name+'_dust', input_count=2)
+    assert set(recipe_root.rglob('*.json')) == expected_paths
+
+    assert SPECIAL_DEPOSITS == {'meteor':256, 'end_deposit':32}
+    for name, chance in SPECIAL_DEPOSITS.items():
+        placement = load(data / f'worldgen/placed_feature/{name}.json')['placement']
+        assert [entry['chance'] for entry in placement if entry['type'] == 'minecraft:rarity_filter'] == [chance]
+        if old:
+            native = (ROOT / 'src/platform/1.18.2/java/com/sosnitzka/taiga/NativeWorldgen.java').read_text()
+            line = next(line for line in native.splitlines() if f'add("{name}"' in line)
+            assert f'RarityFilter.onAverageOnceEvery({chance})' in line
+
 
 def verify(mc):
     root = ROOT / f'src/generated/{mc}'
@@ -224,6 +277,7 @@ def verify(mc):
             assert 1 <= len(label) <= 2 and '.' not in label
     assert set(load(assets / 'mantle/colors.json')['harvest_tier.taiga']) == {'duranite','valyrium','vibranium'}
     ore_changes(root, old)
+    colors_and_machine_recipes(root, old)
     print(mc, ':', count, 'JSON files,', len(items),'items,',len(FLUIDS),'fluid IDs, 30 materials, 37 tool + 18 armor traits: PASS')
 
 def jars():

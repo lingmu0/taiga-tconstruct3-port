@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="GPL-3.0-only"
 [[mods]]
 modId="taiga"
-version="2.0.0-port.5"
+version="2.0.0-port.6"
 displayName="TAIGA - Tinkers Alloying Addon (Unofficial Port)"
 logoFile="taiga.png"
 authors="Zkaface, IdleGandalf / randomtz, TAIGA contributors; unofficial port contributors"

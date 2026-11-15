@@ -1,0 +1,18 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "item": "taiga:tiberium_crystal"
+    },
+    "amount": 2
+  },
+  "output": {
+    "item": "taiga:tiberium_dust"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

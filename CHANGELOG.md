@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.0-port.6
+
+- Give all 37 tool and 18 armor traits configured colors, using original TAIGA colors for the legacy traits.
+- Reduce overworld meteor generation attempts from one in 64 eligible chunks to one in 256; existing chunks are unchanged.
+- Add optional Mekanism enrichment chamber and crusher recipes, and Thermal Expansion pulverizer recipes. TAIGA ore blocks produce two dust; ingots produce one dust; two tiberium or dilithium crystals produce one dust.
+- Apply recipes to all TAIGA ores, including deepslate variants, and retain the existing Forge, Tinkers' Construct and Mantle requirements.
+
+Validation: all three Forge builds and generated-resource checks. These changes have not been tested in a running game or with the optional mods installed.
+
 ## 2.0.0-port.5
 
 - Add `taiga-traits.toml`: 126 runtime numeric settings for all 37 tool traits and 18 armor traits, including damage, chances, durations, cooldowns, durability, slots and stacking limits.

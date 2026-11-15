@@ -1,0 +1,18 @@
+{
+  "type": "mekanism:crushing",
+  "input": {
+    "ingredient": {
+      "item": "taiga:valyrium_ore"
+    }
+  },
+  "output": {
+    "item": "taiga:valyrium_dust",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
+    }
+  ]
+}

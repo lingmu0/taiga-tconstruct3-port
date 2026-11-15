@@ -11,6 +11,8 @@ Original TAIGA by Zkaface, IdleGandalf / randomtz and contributors. This project
 - Armor designs for all 30 tool materials, plus 18 dedicated armor traits covering defense, retaliation, mobility, utility and recovery.
 - 39 molten fluids and buckets, 37 solid material families and 28 alloy recipes.
 - 17 ore blocks, including deepslate vibranium and dilithium, meteorite deposits and End deposits.
+- Colored tool and armor traits; rarer meteorites in newly generated chunks.
+- Optional Mekanism enrichment and crushing and Thermal Expansion pulverizer recipes for ore, ingots and the two crystal drops.
 - Modern vanilla host textures for stone, deepslate, andesite, granite, diorite and netherrack ores.
 - English and Simplified Chinese translations.
 - **126 configurable trait values** in the world-specific `serverconfig/taiga-traits.toml`. Copy the supplied template to `defaultconfigs/` before creating new worlds. See the configuration guide in the source repository.
@@ -37,9 +39,9 @@ The mod's own Forge loader range starts at the corresponding major version. Depe
 
 - [Public source repository](https://github.com/lingmu0/taiga-tconstruct3-port)
 - [Report an issue](https://github.com/lingmu0/taiga-tconstruct3-port/issues)
-- [Source for this build](https://github.com/lingmu0/taiga-tconstruct3-port/tree/v2.0.0-port.5)
-- [Configuration template](https://github.com/lingmu0/taiga-tconstruct3-port/blob/v2.0.0-port.5/config/taiga-traits.toml)
+- [Source for this build](https://github.com/lingmu0/taiga-tconstruct3-port/tree/v2.0.0-port.6)
+- [Configuration template](https://github.com/lingmu0/taiga-tconstruct3-port/blob/v2.0.0-port.6/config/taiga-traits.toml)
 - [Original TAIGA source](https://somegit.dev/TAIGA/TAIGA)
 - License: **GPL-3.0-only**. Original author notices and the license are retained. Modpacks and third-party downloads are permitted under the license.
 
-This initial public build is a **beta**. All three versions pass compilation, resource checks and non-launch logic tests; in-game visuals, combat interactions and multiplayer have not yet been verified. Ore-generation changes apply to newly generated chunks.
+This build is a **beta**. All three versions pass compilation, resource checks and non-launch logic tests; the latest changes and optional-mod integration have not been verified in game. Ore-generation changes apply to newly generated chunks.

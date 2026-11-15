@@ -5,6 +5,7 @@ import copy
 import json
 import armor_resources
 import generate_trait_config
+import machine_recipes
 
 ROOT = Path(__file__).resolve().parents[1]
 MATERIALS = json.loads((ROOT / 'config/materials.json').read_text())
@@ -13,6 +14,13 @@ ORES = json.loads((ROOT / 'config/worldgen.json').read_text())
 TRAITS = json.loads((ROOT / 'config/traits.json').read_text(encoding='utf-8'))
 COMPATIBILITY = json.loads((ROOT / 'config/compatibility.json').read_text(encoding='utf-8'))
 ORE_APPEARANCE = json.loads((ROOT / 'config/ore_appearance.json').read_text(encoding='utf-8'))
+TRAIT_COLORS = json.loads((ROOT / 'config/trait_colors.json').read_text(encoding='utf-8'))
+ARMOR_TRAITS = json.loads((ROOT / 'config/armor_traits.json').read_text(encoding='utf-8'))
+SPECIAL_DEPOSITS = json.loads((ROOT / 'config/special_deposits.json').read_text(encoding='utf-8'))
+
+assert set(TRAIT_COLORS['tools']) == set(TRAITS)
+assert set(TRAIT_COLORS['armor']) == set(ARMOR_TRAITS)
+assert all(isinstance(value, int) and value > 0 for value in SPECIAL_DEPOSITS.values())
 
 def ore_result(ore, host):
     prefix = 'deepslate_' if host == 'minecraft:deepslate' and ORE_APPEARANCE.get(ore['name'], {}).get('deepslate') else ''
@@ -97,7 +105,10 @@ side="BOTH"
     for tier_name, tier_level in (('duranite',5),('valyrium',6),('vibranium',7)):
         for lang in langs:
             langs[lang]['stat.tconstruct.harvest_tier.taiga.'+tier_name] = str(tier_level)+('级' if lang == 'zh_cn' else '')
-    write(assets / 'mantle/colors.json', {'harvest_tier.taiga':{'duranite':'#527A8B','valyrium':'#A84444','vibranium':'#347D73'}})
+    modifier_colors = dict(TRAIT_COLORS['tools'])
+    modifier_colors.update({'armor_'+name: color for name, color in TRAIT_COLORS['armor'].items()})
+    write(assets / 'mantle/colors.json', {'harvest_tier.taiga':{'duranite':'#527A8B','valyrium':'#A84444','vibranium':'#347D73'},
+                                          'modifier.taiga':modifier_colors})
     def recipe(path, obj): write(data / f'recipes/{path}.json', obj)
     def model(name, texture): write(assets / f'models/item/{name}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': texture}})
     for material in MATERIALS:
@@ -263,6 +274,7 @@ side="BOTH"
     for name, amount, duration, temperature in [('magma',50,100,1600),('nitronite',100,500,2000),('dilithium',50,100,1700)]:
         recipe('fuel/' + name, {'type':'tconstruct:melting_fuel','fluid':{'fluid':'taiga:molten_'+name,'amount':amount},'duration':duration,'temperature':temperature,'rate':10})
     armor_resources.generate(root, langs, tags, write)
+    machine_recipes.generate(recipe, MATERIALS, ORE_APPEARANCE)
     for key, entries in tags.items(): write(root / ('data/' + key + '.json'), {'replace':False,'values':sorted(set(entries))})
     for lang in langs:
         langs[lang]['tooltip.taiga.configured_trait'] = 'Custom server values (replace the default description):' if lang == 'en_us' else '此词条已调整，当前服务端数值：'
@@ -282,7 +294,7 @@ side="BOTH"
             {'type':'minecraft:count','count':ore['count']},{'type':'minecraft:in_square'},
             {'type':'minecraft:height_range','height':{'type':'minecraft:uniform','min_inclusive':{'absolute':ore['min']},'max_inclusive':{'absolute':ore['max']}}},
             {'type':'minecraft:biome'}]})
-    for special, chance in [('meteor',64),('end_deposit',32)]:
+    for special, chance in SPECIAL_DEPOSITS.items():
         write(data / f'worldgen/configured_feature/{special}.json', {'type':'taiga:'+special,'config':{}})
         write(data / f'worldgen/placed_feature/{special}.json', {'feature':'taiga:'+special,'placement':[
             {'type':'minecraft:rarity_filter','chance':chance},{'type':'minecraft:in_square'},
@@ -330,15 +342,15 @@ public final class NativeWorldgen {
   }
   private static void bootstrap() {
 @ORES@
-    add("meteor", "overworld", new ConfiguredFeature<>(Taiga.deposit("meteor"), NoneFeatureConfiguration.INSTANCE), List.of(RarityFilter.onAverageOnceEvery(64), InSquarePlacement.spread(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), BiomeFilter.biome()));
-    add("end_deposit", "end", new ConfiguredFeature<>(Taiga.deposit("end_deposit"), NoneFeatureConfiguration.INSTANCE), List.of(RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), BiomeFilter.biome()));
+    add("meteor", "overworld", new ConfiguredFeature<>(Taiga.deposit("meteor"), NoneFeatureConfiguration.INSTANCE), List.of(RarityFilter.onAverageOnceEvery(@METEOR@), InSquarePlacement.spread(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), BiomeFilter.biome()));
+    add("end_deposit", "end", new ConfiguredFeature<>(Taiga.deposit("end_deposit"), NoneFeatureConfiguration.INSTANCE), List.of(RarityFilter.onAverageOnceEvery(@END_DEPOSIT@), InSquarePlacement.spread(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), BiomeFilter.biome()));
   }
   private static void biome(BiomeLoadingEvent event) {
     String dimension = event.getCategory() == Biome.BiomeCategory.NETHER ? "nether" : event.getCategory() == Biome.BiomeCategory.THEEND ? "end" : "overworld";
     for (Holder<PlacedFeature> feature : BY_DIMENSION.getOrDefault(dimension, List.of())) event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, feature);
   }
 }
-'''.replace('@ORES@', '\n'.join(lines))
+'''.replace('@ORES@', '\n'.join(lines)).replace('@METEOR@', str(SPECIAL_DEPOSITS['meteor'])).replace('@END_DEPOSIT@', str(SPECIAL_DEPOSITS['end_deposit']))
     text(ROOT / 'src/platform/1.18.2/java/com/sosnitzka/taiga/NativeWorldgen.java', source)
 
 def main():
