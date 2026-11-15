@@ -6,7 +6,7 @@
 
 Public source: [lingmu0/taiga-tconstruct3-port](https://github.com/lingmu0/taiga-tconstruct3-port). See [releases](https://github.com/lingmu0/taiga-tconstruct3-port/releases) for matching Forge jars, GPL corresponding source and the numeric configuration template.
 
-[CurseForge 项目](https://www.curseforge.com/minecraft/mc-mods/taiga-tconstruct3-port)（项目 ID：1744942）：2026-10-15 已提交三个版本的 Beta 文件，设置为审核通过后自动发布，并开启评论和第三方分发。审核状态以 CurseForge 页面为准。
+[CurseForge 项目](https://www.curseforge.com/minecraft/mc-mods/taiga-tconstruct3-port)（项目 ID：1744942）：已提交三个版本的 Beta 文件，设置为审核通过后自动发布，并开启评论和第三方分发。审核状态以 CurseForge 页面为准。
 
 ## 安装
 
