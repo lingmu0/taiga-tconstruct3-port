@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_imperomite",
+    "name": "taiga:molten_imperomite",
     "amount": 90
   },
   "result": {

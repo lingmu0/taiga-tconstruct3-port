@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_nucleum",
+    "name": "taiga:molten_nucleum",
     "amount": 810
   },
   "result": {

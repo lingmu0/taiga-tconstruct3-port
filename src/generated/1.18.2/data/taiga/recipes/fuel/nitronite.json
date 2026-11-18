@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:melting_fuel",
   "fluid": {
-    "fluid": "taiga:molten_nitronite",
+    "name": "taiga:molten_nitronite",
     "amount": 100
   },
   "duration": 500,

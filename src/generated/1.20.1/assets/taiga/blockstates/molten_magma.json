@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "taiga:block/fluid"
+      "model": "taiga:block/fluid_rock"
     }
   }
 }

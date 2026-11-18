@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_eezo",
+    "name": "taiga:molten_eezo",
     "amount": 10
   },
   "result": {

@@ -2,15 +2,15 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_palladium",
+      "name": "taiga:molten_palladium",
       "amount": 270
     },
     {
-      "fluid": "taiga:molten_duranite",
+      "name": "taiga:molten_duranite",
       "amount": 90
     },
     {
-      "fluid": "taiga:molten_osram",
+      "name": "taiga:molten_osram",
       "amount": 90
     }
   ],

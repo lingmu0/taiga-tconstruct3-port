@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_karmesine",
+    "name": "taiga:molten_karmesine",
     "amount": 10
   },
   "result": {

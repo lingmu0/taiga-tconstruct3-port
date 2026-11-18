@@ -6,6 +6,7 @@ import json
 import armor_resources
 import generate_trait_config
 import machine_recipes
+from fluid_textures import ROCK_FLUIDS, texture_roots
 
 ROOT = Path(__file__).resolve().parents[1]
 MATERIALS = json.loads((ROOT / 'config/materials.json').read_text())
@@ -17,6 +18,7 @@ ORE_APPEARANCE = json.loads((ROOT / 'config/ore_appearance.json').read_text(enco
 TRAIT_COLORS = json.loads((ROOT / 'config/trait_colors.json').read_text(encoding='utf-8'))
 ARMOR_TRAITS = json.loads((ROOT / 'config/armor_traits.json').read_text(encoding='utf-8'))
 SPECIAL_DEPOSITS = json.loads((ROOT / 'config/special_deposits.json').read_text(encoding='utf-8'))
+MELTING_TEMPERATURES = {'taiga:molten_'+material['name']: material['temperature'] for material in MATERIALS}
 
 assert set(TRAIT_COLORS['tools']) == set(TRAITS)
 assert set(TRAIT_COLORS['armor']) == set(ARMOR_TRAITS)
@@ -107,10 +109,24 @@ side="BOTH"
             langs[lang]['stat.tconstruct.harvest_tier.taiga.'+tier_name] = str(tier_level)+('级' if lang == 'zh_cn' else '')
     modifier_colors = dict(TRAIT_COLORS['tools'])
     modifier_colors.update({'armor_'+name: color for name, color in TRAIT_COLORS['armor'].items()})
+    material_colors = {material['name']: '#'+material['color'] for material in MATERIALS if material['tool']}
     write(assets / 'mantle/colors.json', {'harvest_tier.taiga':{'duranite':'#527A8B','valyrium':'#A84444','vibranium':'#347D73'},
+                                          'material.taiga':material_colors,
                                           'modifier.taiga':modifier_colors})
     def recipe(path, obj): write(data / f'recipes/{path}.json', obj)
     def model(name, texture): write(assets / f'models/item/{name}.json', {'parent': 'minecraft:item/generated', 'textures': {'layer0': texture}})
+
+    def fluid_input(fluid, amount):
+        # Mantle 1.9 uses "name" for a fluid ingredient. Outputs still use "fluid".
+        return {'name' if old else 'fluid': fluid, 'amount': amount}
+
+    def fuel(name, ingredient, duration, temperature):
+        recipe(f'fuel/{name}', {'type': 'tconstruct:melting_fuel', 'fluid': ingredient,
+                                'duration': duration, 'temperature': temperature, 'rate': 10})
+
+    textures = texture_roots(mc)
+    for model_name, texture in (('fluid', textures['metal']), ('fluid_rock', textures['rock'])):
+        write(assets / f'models/block/{model_name}.json', {'textures': {'particle': texture + '/still'}})
     for material in MATERIALS:
         name, color, temperature = material['name'], material['color'], material['temperature']
         fluid = 'taiga:molten_' + name
@@ -124,7 +140,8 @@ side="BOTH"
             langs[lang]['material.taiga.' + name] = display
         write(data / f'tags/fluids/molten_{name}.json', {'replace': False, 'values': [fluid, 'taiga:flowing_molten_' + name]})
         tags[f'forge/tags/fluids/molten_{name}'].extend([fluid, 'taiga:flowing_molten_' + name])
-        write(assets / f'blockstates/molten_{name}.json', {'variants': {'': {'model': 'taiga:block/fluid'}}})
+        fluid_model = 'fluid_rock' if name in ROCK_FLUIDS else 'fluid'
+        write(assets / f'blockstates/molten_{name}.json', {'variants': {'': {'model': 'taiga:block/'+fluid_model}}})
         write(assets / f'models/item/molten_{name}_bucket.json', {'parent': 'forge:item/bucket_drip', 'fluid': fluid, 'loader': 'forge:bucket' if old else 'tconstruct:fluid_container', 'flip_gas': False})
         if name in ('magma','nitronite'): continue
         blocks = [name + '_block'] + ([name + '_ore'] if material['ore'] else [])
@@ -204,7 +221,7 @@ side="BOTH"
             recipe(f'melting/{name}_ore', {'type':'tconstruct:ore_melting','ingredient':{'item':f'taiga:{name}_ore'},'result':{'fluid':fluid,'amount':180},'temperature':temperature,'time':120,'rate':'metal'})
         for form, amount, cast, cooling in [('ingot',90,'ingot',60),('nugget',10,'nugget',20),('block',810,None,180)]:
             casting = {'type': 'tconstruct:casting_basin' if cast is None else 'tconstruct:casting_table',
-                'fluid': {'fluid':fluid,'amount':amount}, 'result':{'item':f'taiga:{name}_{form}'}, 'cooling_time':cooling}
+                'fluid': fluid_input(fluid, amount), 'result':{'item':f'taiga:{name}_{form}'}, 'cooling_time':cooling}
             if cast: casting['cast'] = {'tag':f'tconstruct:casts/multi_use/{cast}'}
             recipe(f'casting/{name}_{form}', casting)
             if cast:
@@ -256,23 +273,36 @@ side="BOTH"
         write(assets / f'tinkering/materials/{name}.json', {'color':('' if old else 'FF')+color,'fallbacks':['metal'],'generator':generator})
         for form, value, needed in [('ingot',1,1),('nugget',1,9),('block',9,1)]:
             recipe(f'materials/{name}_{form}', {'type':'tconstruct:material','ingredient':{'item':f'taiga:{name}_{form}'},'material':mid,'value':value,'needed':needed})
-        recipe(f'materials/{name}_casting', {'type':'tconstruct:material_fluid','fluid':{'fluid':fluid,'amount':90},'output':mid,'temperature':temperature})
+        recipe(f'materials/{name}_casting', {'type':'tconstruct:material_fluid','fluid':fluid_input(fluid, 90),'output':mid,'temperature':temperature})
         recipe(f'materials/{name}_melting', {'type':'tconstruct:material_melting','input':mid,'result':{'fluid':fluid,'amount':90},'temperature':temperature})
     for name in ('tiberium','dilithium'):
         crystal = name + '_crystal'
         model(crystal, 'taiga:item/crystal/' + name)
         recipe('melting/' + crystal, {'type':'tconstruct:melting','ingredient':{'item':'taiga:' + crystal},'result':{'fluid':'taiga:molten_'+name,'amount':45},'temperature':500 if name == 'tiberium' else 1500,'time':40})
         for lang in langs: langs[lang]['item.taiga.' + crystal] = names[lang].get(name,name.title()) + (' Crystal' if lang == 'en_us' else '水晶')
-    for name, vanilla in [('basalt','basalt'),('magma','magma_block')]:
-        recipe('melting/vanilla_' + name, {'type':'tconstruct:melting','ingredient':{'item':'minecraft:' + vanilla},'result':{'fluid':'taiga:molten_'+name,'amount':90 if name == 'basalt' else 180},'temperature':550 if name == 'basalt' else 1000,'time':80})
+    recipe('melting/vanilla_basalt', {'type':'tconstruct:melting', 'ingredient':{'item':'minecraft:basalt'},
+                                     'result':{'fluid':'taiga:molten_basalt','amount':90}, 'temperature':550, 'time':80})
+    # Tinkers already melts magma blocks. Use its fluid in the alloy and fuel recipes below.
+    (data / 'recipes/melting/vanilla_magma.json').unlink(missing_ok=True)
     for name in ('meteorite','obsidiorite'):
         recipe('melting/' + name + '_cobble', {'type':'tconstruct:melting','ingredient':{'item':f'taiga:{name}cobble_block'},'result':{'fluid':'taiga:molten_'+name,'amount':810},'temperature':950 if name == 'meteorite' else 1050,'time':180})
         recipe('smelting/' + name + '_cobble', {'type':'minecraft:smelting','ingredient':{'item':f'taiga:{name}cobble_block'},'result':f'taiga:{name}_block','experience':0.1,'cookingtime':200})
     for index, alloy in enumerate(ALLOYS):
         # Fixed alloying heat is independent of the fluid's display temperature.
-        recipe(f'alloy/{index:02d}_{alloy["result"]["fluid"].split("molten_")[1]}', {'type':'tconstruct:alloy','inputs':alloy['inputs'],'result':alloy['result'],'temperature':1000 if 'nitronite' in alloy['result']['fluid'] else min(1000, max(next((m['temperature'] for m in MATERIALS if 'taiga:molten_'+m['name'] == f['fluid']),800) for f in alloy['inputs']))})
+        result = alloy['result']
+        name = result['fluid'].removeprefix('taiga:molten_')
+        recipe_name = alloy.get('id', f'{index:02d}_{name}')
+        temperature = 1000 if name == 'nitronite' else min(
+            1000, max(MELTING_TEMPERATURES.get(entry.get('fluid'), 800) for entry in alloy['inputs']))
+        inputs = [fluid_input(entry['fluid'], entry['amount']) if 'fluid' in entry else entry
+                  for entry in alloy['inputs']]
+        recipe(f'alloy/{recipe_name}', {'type':'tconstruct:alloy', 'inputs':inputs,
+                                        'result':result, 'temperature':temperature})
     for name, amount, duration, temperature in [('magma',50,100,1600),('nitronite',100,500,2000),('dilithium',50,100,1700)]:
-        recipe('fuel/' + name, {'type':'tconstruct:melting_fuel','fluid':{'fluid':'taiga:molten_'+name,'amount':amount},'duration':duration,'temperature':temperature,'rate':10})
+        fuel(name, fluid_input('taiga:molten_'+name, amount), duration, temperature)
+    # A block now yields 1000 mB of magma instead of 180 mB of TAIGA magma.
+    # Preserve the burn time per block at 1600 degrees over a batch.
+    fuel('tconstruct_magma', {'tag': 'forge:magma', 'amount': 250}, 90, 1600)
     armor_resources.generate(root, langs, tags, write)
     machine_recipes.generate(recipe, MATERIALS, ORE_APPEARANCE)
     for key, entries in tags.items(): write(root / ('data/' + key + '.json'), {'replace':False,'values':sorted(set(entries))})

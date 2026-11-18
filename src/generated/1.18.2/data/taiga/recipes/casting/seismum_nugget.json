@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_seismum",
+    "name": "taiga:molten_seismum",
     "amount": 10
   },
   "result": {

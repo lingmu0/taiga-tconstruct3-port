@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_solarium",
+    "name": "taiga:molten_solarium",
     "amount": 90
   },
   "result": {

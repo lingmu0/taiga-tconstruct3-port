@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_dyonite",
+    "name": "taiga:molten_dyonite",
     "amount": 810
   },
   "result": {

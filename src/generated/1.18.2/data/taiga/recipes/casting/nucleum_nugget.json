@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_nucleum",
+    "name": "taiga:molten_nucleum",
     "amount": 10
   },
   "result": {

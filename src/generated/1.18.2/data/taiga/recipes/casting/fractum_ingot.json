@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_fractum",
+    "name": "taiga:molten_fractum",
     "amount": 90
   },
   "result": {

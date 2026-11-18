@@ -43,7 +43,14 @@ def walk(value):
 def progression():
     # Start with vanilla netherite-tier equipment; later levels must be earned.
     reachable = {'minecraft:lava','tconstruct:molten_obsidian','tconstruct:molten_cobalt','tconstruct:molten_hepatizon',
-                 'taiga:molten_basalt','taiga:molten_magma','taiga:molten_meteorite'}
+                 'taiga:molten_basalt','tconstruct:magma','taiga:molten_meteorite'}
+    fluid_tags = {'forge:magma': {'tconstruct:magma'}}
+
+    def can_supply(ingredient):
+        if 'fluid' in ingredient:
+            return ingredient['fluid'] in reachable
+        return bool(fluid_tags[ingredient['tag']] & reachable)
+
     tier = 4
     changed = True
     while changed:
@@ -53,12 +60,13 @@ def progression():
                 reachable.add('taiga:molten_'+material['name'])
         if tier >= 5: reachable.add('taiga:molten_obsidiorite')
         for recipe in ALLOYS:
-            if all(i['fluid'] in reachable for i in recipe['inputs']): reachable.add(recipe['result']['fluid'])
+            if all(can_supply(ingredient) for ingredient in recipe['inputs']): reachable.add(recipe['result']['fluid'])
         for material in MATERIALS:
             if material['tool'] and 'taiga:molten_'+material['name'] in reachable:
                 tier = max(tier,LEVELS[material['tool']['tier']])
         changed = before != (len(reachable),tier)
-    unreachable = [m['name'] for m in MATERIALS if 'taiga:molten_'+m['name'] not in reachable]
+    # Old worlds can still use their stored TAIGA magma, but new worlds produce Tinkers' magma.
+    unreachable = [m['name'] for m in MATERIALS if m['name'] != 'magma' and 'taiga:molten_'+m['name'] not in reachable]
     assert not unreachable, 'Unreachable materials: '+repr(unreachable)
     assert tier == 7
     return len(reachable)
@@ -165,6 +173,69 @@ def colors_and_machine_recipes(root, old):
             assert f'RarityFilter.onAverageOnceEvery({chance})' in line
 
 
+def verify_magma_and_fluid_textures(mc, root, upstream):
+    data = root / 'data/taiga'
+    assets = root / 'assets/taiga'
+    recipes = data / 'recipes'
+    old = mc == '1.18.2'
+    upstream_recipes = 'data/tconstruct/recipes/smeltery/melting'
+    lava_fuel = json.loads(upstream.read(upstream_recipes + '/fuel/lava.json'))
+    fluid_key = next(key for key in lava_fuel['fluid'] if key != 'amount')
+    assert lava_fuel['fluid'][fluid_key] == 'minecraft:lava' and lava_fuel['temperature'] == 1000
+
+    magma_melt = json.loads(upstream.read(upstream_recipes + '/slime/magma/block.json'))
+    assert magma_melt['ingredient'] == {'item': 'minecraft:magma_block'}
+    magma_tag = json.loads(upstream.read('data/forge/tags/fluids/magma.json'))['values']
+    native_magma = json.loads(upstream.read('data/tconstruct/tags/fluids/magma.json'))['values']
+    assert magma_tag == ['#tconstruct:magma'] and 'tconstruct:magma' in native_magma
+    assert magma_melt['result'].get('fluid', magma_melt['result'].get('tag')) in ('tconstruct:magma', 'forge:magma')
+    assert not (root / 'data/tconstruct/recipes').exists(), 'This fix must not replace upstream recipes'
+    for path in (recipes / 'melting').glob('*.json'):
+        assert {'item': 'minecraft:magma_block'} not in walk(load(path)['ingredient']), path
+
+    alloy = load(recipes / 'alloy/nitronite_from_magma.json')
+    legacy = load(recipes / 'alloy/27_nitronite.json')
+    current_fuel = load(recipes / 'fuel/tconstruct_magma.json')
+    legacy_fuel = load(recipes / 'fuel/magma.json')
+    assert alloy['inputs'] == [{'tag': 'forge:magma', 'amount': magma_melt['result']['amount']},
+                               {fluid_key: 'taiga:molten_osram', 'amount': 30}]
+    assert legacy['inputs'] == [{fluid_key: 'taiga:molten_magma', 'amount': 540},
+                                {fluid_key: 'taiga:molten_osram', 'amount': 90}]
+    assert alloy['result'] == {'fluid': 'taiga:molten_nitronite', 'amount': 180}
+    assert legacy['result'] == {'fluid': 'taiga:molten_nitronite', 'amount': 540}
+    assert alloy['temperature'] == legacy['temperature'] == lava_fuel['temperature']
+    assert current_fuel['fluid']['tag'] == 'forge:magma' and current_fuel['temperature'] == 1600
+    assert legacy_fuel['fluid'][fluid_key] == 'taiga:molten_magma' and legacy_fuel['temperature'] == 1600
+    # Compare burn time for the same number of magma blocks across the two routes.
+    assert (magma_melt['result']['amount'] * current_fuel['duration'] * legacy_fuel['fluid']['amount']
+            == 180 * legacy_fuel['duration'] * current_fuel['fluid']['amount'])
+    for folder in ('casting', 'materials', 'alloy', 'fuel'):
+        for path in (recipes / folder).glob('*.json'):
+            recipe = load(path)
+            inputs = recipe.get('inputs', []) if folder == 'alloy' else [recipe['fluid']] if 'fluid' in recipe else []
+            for ingredient in inputs:
+                key = next(key for key in ingredient if key != 'amount')
+                assert key in (fluid_key, 'tag') and ingredient['amount'] > 0, path
+                if key == fluid_key:
+                    local_id(ingredient[key], FLUIDS)
+
+    # Both liquid surfaces and particles use the dependency's shipped animated sprites.
+    platform = (ROOT / f'src/platform/{mc}/java/com/sosnitzka/taiga/Platform.java').read_text()
+    assert 'water_still' not in platform and 'water_flow' not in platform
+    metal_root = 'block/fluid/molten' if old else 'fluid/molten'
+    rock_root = 'block/fluid/stone' if old else 'fluid/molten/stone'
+    for model, texture in (('fluid', metal_root), ('fluid_rock', rock_root)):
+        assert f'"tconstruct:{texture}"' in platform
+        assert load(assets / f'models/block/{model}.json')['textures']['particle'] == f'tconstruct:{texture}/still'
+        for sprite in ('still', 'flowing'):
+            path = f'assets/tconstruct/textures/{texture}/{sprite}.png'
+            assert upstream.read(path).startswith(b'\x89PNG\r\n\x1a\n')
+            assert 'animation' in json.loads(upstream.read(path + '.mcmeta'))
+    for material, model in (('magma', 'fluid_rock'), ('vibranium', 'fluid')):
+        state = load(assets / f'blockstates/molten_{material}.json')
+        assert state['variants']['']['model'] == 'taiga:block/' + model
+
+
 def verify(mc):
     root = ROOT / f'src/generated/{mc}'
     assets = root / 'assets/taiga'
@@ -191,6 +262,7 @@ def verify(mc):
     with zipfile.ZipFile(tc_jar) as upstream:
         upstream_files = set(upstream.namelist())
         upstream_generator = json.loads(upstream.read('assets/tconstruct/tinkering/materials/cobalt.json'))['generator']
+        verify_magma_and_fluid_textures(mc, root, upstream)
     for cast in ('multi_use','single_use'):
         for form in ('ingot','nugget'):
             assert f'data/tconstruct/tags/items/casts/{cast}/{form}.json' in upstream_files
@@ -228,6 +300,7 @@ def verify(mc):
             assert packed['result'] == {'item':f'taiga:{name}_{large}'}
             assert unpacked['ingredients'] == [{'item':f'taiga:{name}_{large}'}]
             assert unpacked['result'] == {'item':f'taiga:{name}_{small}','count':9}
+    material_colors = load(assets / 'mantle/colors.json')['material.taiga']
     for material in MATERIALS:
         if not material['tool']: continue
         name = material['name']
@@ -241,7 +314,10 @@ def verify(mc):
         traits = load(data / f'tinkering/materials/traits/{name}.json')
         for entries in [traits['default'],*traits['perStat'].values()]:
             for entry in entries: assert entry['name'].split(':')[1] in ALL_MODIFIERS, entry
-        rendering = load(assets / f'tinkering/materials/{name}.json')['generator']
+        render_info = load(assets / f'tinkering/materials/{name}.json')
+        color = material_colors[name]
+        assert re.fullmatch(r'#[0-9A-Fa-f]{6}', color) and color[1:].lower() == render_info['color'][-6:].lower(), name
+        rendering = render_info['generator']
         supported_key = 'supported_stats' if 'supported_stats' in upstream_generator else 'supportedStats'
         assert supported_key in rendering
         assert isinstance(rendering['transformer']['color_mapping']['palette'], type(upstream_generator['transformer']['color_mapping']['palette']))
@@ -253,7 +329,8 @@ def verify(mc):
     assert set(re.findall(r'\("([a-z_]+)"\)',enum_source)) == set(TRAITS)
     definitions = list((data / 'tinkering/materials/definition').glob('*.json'))
     assert len(definitions) == 30
-    assert len(list((data / 'recipes/alloy').glob('*.json'))) == 28
+    assert set(material_colors) == {path.stem for path in definitions}
+    assert len(list((data / 'recipes/alloy').glob('*.json'))) == len(ALLOYS)
     assert len(list((data / 'worldgen/placed_feature').glob('*.json'))) == 15
     for path in (data / 'worldgen/placed_feature').glob('*.json'):
         feature = load(path)['feature'].split(':')[1]
@@ -265,6 +342,7 @@ def verify(mc):
     for language in ('en_us','zh_cn'):
         lang = load(assets / f'lang/{language}.json')
         for trait in TRAITS: assert 'modifier.taiga.'+trait+'.description' in lang
+        for name in material_colors: assert f'material.taiga.{name}' in lang
         for item in items:
             assert ('block.taiga.' if item in BLOCKS else 'item.taiga.')+item in lang, item
         for material in MATERIALS:
@@ -287,6 +365,7 @@ def jars():
         with zipfile.ZipFile(path) as jar:
             names = set(jar.namelist())
             assert 'META-INF/mods.toml' in names and 'LICENSE' in names and 'NOTICE.md' in names
+            assert 'data/taiga/recipes/melting/vanilla_magma.json' not in names
             for cls in ('Taiga','Platform','Catalog','TaigaModifier','TraitLogic','TraitEvents','DepositFeature',
                         'ArmorCatalog','ArmorTrait','ArmorModifier','ArmorEvents','ArmorPlatform','ArmorBalance',
                         'TraitDefaults','TraitTuning','TraitConfig','TraitDescriptions','TraitStatRefresh'):

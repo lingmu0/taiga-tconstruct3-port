@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_uru",
+    "name": "taiga:molten_uru",
     "amount": 10
   },
   "result": {

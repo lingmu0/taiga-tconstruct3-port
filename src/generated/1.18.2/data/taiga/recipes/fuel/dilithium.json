@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:melting_fuel",
   "fluid": {
-    "fluid": "taiga:molten_dilithium",
+    "name": "taiga:molten_dilithium",
     "amount": 50
   },
   "duration": 100,

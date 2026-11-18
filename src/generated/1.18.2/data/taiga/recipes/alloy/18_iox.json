@@ -2,19 +2,19 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_eezo",
+      "name": "taiga:molten_eezo",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_abyssum",
+      "name": "taiga:molten_abyssum",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_osram",
+      "name": "taiga:molten_osram",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_obsidiorite",
+      "name": "taiga:molten_obsidiorite",
       "amount": 810
     }
   ],

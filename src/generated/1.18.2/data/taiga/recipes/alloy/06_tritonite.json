@@ -2,11 +2,11 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "tconstruct:molten_cobalt",
+      "name": "tconstruct:molten_cobalt",
       "amount": 270
     },
     {
-      "fluid": "taiga:molten_terrax",
+      "name": "taiga:molten_terrax",
       "amount": 180
     }
   ],

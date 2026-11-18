@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_tiberium",
+    "name": "taiga:molten_tiberium",
     "amount": 90
   },
   "result": {

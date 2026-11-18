@@ -2,15 +2,15 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_karmesine",
+      "name": "taiga:molten_karmesine",
       "amount": 90
     },
     {
-      "fluid": "taiga:molten_ovium",
+      "name": "taiga:molten_ovium",
       "amount": 90
     },
     {
-      "fluid": "taiga:molten_jauxum",
+      "name": "taiga:molten_jauxum",
       "amount": 90
     }
   ],

@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_uru",
+    "name": "taiga:molten_uru",
     "amount": 810
   },
   "result": {

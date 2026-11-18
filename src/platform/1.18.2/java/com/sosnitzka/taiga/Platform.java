@@ -21,6 +21,8 @@ public final class Platform {
   private static final Map<String, RegistryObject<FlowingFluid>> FLOWING = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<Item>> BUCKETS = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<LiquidBlock>> BLOCKS = new LinkedHashMap<>();
+  private static final FluidSprites METAL_SPRITES = new FluidSprites("tconstruct:block/fluid/molten");
+  private static final FluidSprites ROCK_SPRITES = new FluidSprites("tconstruct:block/fluid/stone");
   
   private static final CreativeModeTab TAB = new CreativeModeTab("taiga") {
     @Override public ItemStack makeIcon() { return new ItemStack(Taiga.block("vibranium_ore")); }
@@ -51,8 +53,20 @@ public final class Platform {
   }
   private static ForgeFlowingFluid.Properties properties(String name) {
     Catalog.Material material = Catalog.find(name);
-    return new ForgeFlowingFluid.Properties(SOURCES.get(name), FLOWING.get(name), FluidAttributes.builder(new ResourceLocation("minecraft", "block/water_still"), new ResourceLocation("minecraft", "block/water_flow")).color(0xFF000000 | material.color()).temperature(material.temperature() + 273).density(2000).viscosity(10000).luminosity(10).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
+    FluidSprites textures = sprites(name);
+    return new ForgeFlowingFluid.Properties(SOURCES.get(name), FLOWING.get(name), FluidAttributes.builder(textures.still(), textures.flowing()).color(0xFF000000 | material.color()).temperature(material.temperature() + 273).density(2000).viscosity(10000).luminosity(10).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA))
         .bucket(BUCKETS.get(name)).block(BLOCKS.get(name)).tickRate(20).slopeFindDistance(2).levelDecreasePerBlock(2);
+  }
+  private static FluidSprites sprites(String name) {
+    return switch (name) {
+      case "basalt", "magma", "meteorite", "obsidiorite" -> ROCK_SPRITES;
+      default -> METAL_SPRITES;
+    };
+  }
+  private record FluidSprites(ResourceLocation still, ResourceLocation flowing) {
+    private FluidSprites(String root) {
+      this(new ResourceLocation(root + "/still"), new ResourceLocation(root + "/flowing"));
+    }
   }
   @net.minecraftforge.fml.common.Mod.EventBusSubscriber(modid = Taiga.ID, bus = net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus.MOD, value = net.minecraftforge.api.distmarker.Dist.CLIENT)
   public static final class ClientRendering {

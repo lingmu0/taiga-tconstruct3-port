@@ -542,5 +542,22 @@
         "amount": 90
       }
     ]
+  },
+  {
+    "id": "nitronite_from_magma",
+    "result": {
+      "fluid": "taiga:molten_nitronite",
+      "amount": 180
+    },
+    "inputs": [
+      {
+        "tag": "forge:magma",
+        "amount": 1000
+      },
+      {
+        "fluid": "taiga:molten_osram",
+        "amount": 30
+      }
+    ]
   }
 ]

@@ -2,11 +2,11 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_palladium",
+      "name": "taiga:molten_palladium",
       "amount": 90
     },
     {
-      "fluid": "taiga:molten_terrax",
+      "name": "taiga:molten_terrax",
       "amount": 90
     }
   ],

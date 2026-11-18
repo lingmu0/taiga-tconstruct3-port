@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "tag": "forge:magma",
+      "amount": 1000
+    },
+    {
+      "name": "taiga:molten_osram",
+      "amount": 30
+    }
+  ],
+  "result": {
+    "fluid": "taiga:molten_nitronite",
+    "amount": 180
+  },
+  "temperature": 1000
+}

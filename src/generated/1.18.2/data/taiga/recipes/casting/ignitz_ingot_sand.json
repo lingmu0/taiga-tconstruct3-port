@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_ignitz",
+    "name": "taiga:molten_ignitz",
     "amount": 90
   },
   "result": {

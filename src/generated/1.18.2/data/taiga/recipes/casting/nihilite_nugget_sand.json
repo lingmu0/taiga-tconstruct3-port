@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_nihilite",
+    "name": "taiga:molten_nihilite",
     "amount": 10
   },
   "result": {

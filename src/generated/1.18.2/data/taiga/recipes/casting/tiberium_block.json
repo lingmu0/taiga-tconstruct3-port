@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_tiberium",
+    "name": "taiga:molten_tiberium",
     "amount": 810
   },
   "result": {

@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_ovium",
+    "name": "taiga:molten_ovium",
     "amount": 10
   },
   "result": {

@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "fluid": "taiga:molten_palladium",
+    "name": "taiga:molten_palladium",
     "amount": 90
   },
   "output": "taiga:palladium",

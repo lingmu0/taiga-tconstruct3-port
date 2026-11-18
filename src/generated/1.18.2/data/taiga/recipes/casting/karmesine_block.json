@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_karmesine",
+    "name": "taiga:molten_karmesine",
     "amount": 810
   },
   "result": {

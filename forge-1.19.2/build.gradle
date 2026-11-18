@@ -2,7 +2,7 @@ plugins {
     id 'net.minecraftforge.gradle' version '5.1.77'
 }
 group = 'com.sosnitzka.taiga'
-version = '2.0.0-port.6'
+version = '2.0.0-port.7'
 base { archivesName = 'taiga-1.19.2-forge' }
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(17)

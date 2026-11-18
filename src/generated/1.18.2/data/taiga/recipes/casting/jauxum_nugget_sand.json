@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_jauxum",
+    "name": "taiga:molten_jauxum",
     "amount": 10
   },
   "result": {

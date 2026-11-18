@@ -2,11 +2,11 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_magma",
+      "name": "taiga:molten_magma",
       "amount": 540
     },
     {
-      "fluid": "taiga:molten_osram",
+      "name": "taiga:molten_osram",
       "amount": 90
     }
   ],

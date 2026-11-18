@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "fluid": "taiga:molten_adamant",
+    "name": "taiga:molten_adamant",
     "amount": 90
   },
   "output": "taiga:adamant",

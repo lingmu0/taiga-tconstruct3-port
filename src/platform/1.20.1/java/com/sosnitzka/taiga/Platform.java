@@ -21,6 +21,8 @@ public final class Platform {
   private static final Map<String, RegistryObject<FlowingFluid>> FLOWING = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<Item>> BUCKETS = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<LiquidBlock>> BLOCKS = new LinkedHashMap<>();
+  private static final FluidSprites METAL_SPRITES = new FluidSprites("tconstruct:fluid/molten");
+  private static final FluidSprites ROCK_SPRITES = new FluidSprites("tconstruct:fluid/molten/stone");
   private static final DeferredRegister<FluidType> TYPES_REGISTER = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, Taiga.ID);
 private static final Map<String, RegistryObject<FluidType>> TYPES = new LinkedHashMap<>();
   private static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(net.minecraft.core.registries.Registries.CREATIVE_MODE_TAB, Taiga.ID);
@@ -40,11 +42,12 @@ private static final Map<String, RegistryObject<FluidType>> TYPES = new LinkedHa
   public static void register(IEventBus bus) {
     for (Catalog.Material material : Catalog.MATERIALS) {
       String name = material.name();
+      FluidSprites textures = sprites(name);
       TYPES.put(name, TYPES_REGISTER.register("molten_" + name, () -> new FluidType(FluidType.Properties.create().density(2000).viscosity(10000).temperature(material.temperature() + 273).lightLevel(10).sound(net.minecraftforge.common.SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(net.minecraftforge.common.SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)) {
         @Override public void initializeClient(java.util.function.Consumer<IClientFluidTypeExtensions> consumer) {
           consumer.accept(new IClientFluidTypeExtensions() {
-            @Override public ResourceLocation getStillTexture() { return new ResourceLocation("minecraft", "block/water_still"); }
-            @Override public ResourceLocation getFlowingTexture() { return new ResourceLocation("minecraft", "block/water_flow"); }
+            @Override public ResourceLocation getStillTexture() { return textures.still(); }
+            @Override public ResourceLocation getFlowingTexture() { return textures.flowing(); }
             @Override public int getTintColor() { return 0xFF000000 | material.color(); }
           });
         }
@@ -60,9 +63,19 @@ private static final Map<String, RegistryObject<FluidType>> TYPES = new LinkedHa
     
   }
   private static ForgeFlowingFluid.Properties properties(String name) {
-    Catalog.Material material = Catalog.find(name);
     return new ForgeFlowingFluid.Properties(TYPES.get(name), SOURCES.get(name), FLOWING.get(name))
         .bucket(BUCKETS.get(name)).block(BLOCKS.get(name)).tickRate(20).slopeFindDistance(2).levelDecreasePerBlock(2);
+  }
+  private static FluidSprites sprites(String name) {
+    return switch (name) {
+      case "basalt", "magma", "meteorite", "obsidiorite" -> ROCK_SPRITES;
+      default -> METAL_SPRITES;
+    };
+  }
+  private record FluidSprites(ResourceLocation still, ResourceLocation flowing) {
+    private FluidSprites(String root) {
+      this(new ResourceLocation(root + "/still"), new ResourceLocation(root + "/flowing"));
+    }
   }
   
 }

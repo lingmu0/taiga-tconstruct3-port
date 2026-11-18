@@ -2,15 +2,15 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "taiga:molten_prometheum",
+      "name": "taiga:molten_prometheum",
       "amount": 270
     },
     {
-      "fluid": "taiga:molten_palladium",
+      "name": "taiga:molten_palladium",
       "amount": 270
     },
     {
-      "fluid": "taiga:molten_eezo",
+      "name": "taiga:molten_eezo",
       "amount": 90
     }
   ],

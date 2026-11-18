@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0-port.7
+
+- Remove TAIGA's duplicate magma-block melting recipe. The magma made by Tinkers' Construct now works as a nitronite ingredient and as 1600°C fuel. Existing TAIGA molten magma still works in both roles.
+- Use Tinkers' Construct's animated molten metal and rock textures for TAIGA fluids while preserving their material colors.
+- Color all 30 TAIGA material names in the Tinkers' Construct book, part builder, and material tooltips using their material palettes.
+- Generate the fluid ingredient field required by Minecraft 1.18.2's Mantle for alloys, fuels, and casting.
+
 ## 2.0.0-port.6
 
 - Give all 37 tool and 18 armor traits configured colors, using original TAIGA colors for the legacy traits.

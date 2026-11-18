@@ -2,15 +2,15 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "tconstruct:molten_obsidian",
+      "name": "tconstruct:molten_obsidian",
       "amount": 360
     },
     {
-      "fluid": "taiga:molten_triberium",
+      "name": "taiga:molten_triberium",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_eezo",
+      "name": "taiga:molten_eezo",
       "amount": 90
     }
   ],

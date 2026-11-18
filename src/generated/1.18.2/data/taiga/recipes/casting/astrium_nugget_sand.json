@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_astrium",
+    "name": "taiga:molten_astrium",
     "amount": 10
   },
   "result": {

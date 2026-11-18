@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_osram",
+    "name": "taiga:molten_osram",
     "amount": 810
   },
   "result": {

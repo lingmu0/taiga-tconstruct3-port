@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:material_fluid",
   "fluid": {
-    "fluid": "taiga:molten_dyonite",
+    "name": "taiga:molten_dyonite",
     "amount": 90
   },
   "output": "taiga:dyonite",

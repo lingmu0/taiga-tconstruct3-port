@@ -1,6 +1,7 @@
 """Emit the deliberately small adapters for Forge and TiC API differences."""
 from pathlib import Path
 import armor_platform
+from fluid_textures import ROCK_FLUIDS, texture_roots
 ROOT = Path(__file__).resolve().parents[1]
 
 COMMON_IMPORTS = '''package com.sosnitzka.taiga;
@@ -117,6 +118,8 @@ public final class Platform {
   private static final Map<String, RegistryObject<FlowingFluid>> FLOWING = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<Item>> BUCKETS = new LinkedHashMap<>();
   private static final Map<String, RegistryObject<LiquidBlock>> BLOCKS = new LinkedHashMap<>();
+  private static final FluidSprites METAL_SPRITES = new FluidSprites("@METAL_TEXTURE@");
+  private static final FluidSprites ROCK_SPRITES = new FluidSprites("@ROCK_TEXTURE@");
   @FIELDS@
   public static Item.Properties itemProperties() { return new Item.Properties()@ITEM_PROPS@; }
   public static BlockBehaviour.Properties blockProperties() { return @BLOCK_PROPS@; }
@@ -142,19 +145,30 @@ public final class Platform {
     @WORLDGEN@
   }
   private static ForgeFlowingFluid.Properties properties(String name) {
-    Catalog.Material material = Catalog.find(name);
-    return new ForgeFlowingFluid.Properties(@FLUID_PROPS@)
+@FLUID_LOCALS@    return new ForgeFlowingFluid.Properties(@FLUID_PROPS@)
         .bucket(BUCKETS.get(name)).block(BLOCKS.get(name)).tickRate(20).slopeFindDistance(2).levelDecreasePerBlock(2);
+  }
+  private static FluidSprites sprites(String name) {
+    return switch (name) {
+      case @ROCK_FLUIDS@ -> ROCK_SPRITES;
+      default -> METAL_SPRITES;
+    };
+  }
+  private record FluidSprites(ResourceLocation still, ResourceLocation flowing) {
+    private FluidSprites(String root) {
+      this(new ResourceLocation(root + "/still"), new ResourceLocation(root + "/flowing"));
+    }
   }
   @CLIENT_RENDERING@
 }
 '''
 
-TYPE_REGISTER = '''TYPES.put(name, TYPES_REGISTER.register("molten_" + name, () -> new FluidType(FluidType.Properties.create().density(2000).viscosity(10000).temperature(material.temperature() + 273).lightLevel(10).sound(net.minecraftforge.common.SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(net.minecraftforge.common.SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)) {
+TYPE_REGISTER = '''FluidSprites textures = sprites(name);
+      TYPES.put(name, TYPES_REGISTER.register("molten_" + name, () -> new FluidType(FluidType.Properties.create().density(2000).viscosity(10000).temperature(material.temperature() + 273).lightLevel(10).sound(net.minecraftforge.common.SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA).sound(net.minecraftforge.common.SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA)) {
         @Override public void initializeClient(java.util.function.Consumer<IClientFluidTypeExtensions> consumer) {
           consumer.accept(new IClientFluidTypeExtensions() {
-            @Override public ResourceLocation getStillTexture() { return new ResourceLocation("minecraft", "block/water_still"); }
-            @Override public ResourceLocation getFlowingTexture() { return new ResourceLocation("minecraft", "block/water_flow"); }
+            @Override public ResourceLocation getStillTexture() { return textures.still(); }
+            @Override public ResourceLocation getFlowingTexture() { return textures.flowing(); }
             @Override public int getTintColor() { return 0xFF000000 | material.color(); }
           });
         }
@@ -173,6 +187,7 @@ def main():
         (path / 'TaigaModifier.java').write_text(modifier, encoding='utf-8')
         old = mc == '1.18.2'
         tab = mc == '1.20.1'
+        textures = texture_roots(mc)
         values = {
             'IMPORTS': ('import net.minecraftforge.fluids.FluidAttributes;\nimport net.minecraft.network.chat.TranslatableComponent;'
                         if old else 'import net.minecraftforge.fluids.FluidType;\nimport net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;'),
@@ -197,7 +212,11 @@ def main():
   }''' if old else '',
             'NO_LOOT': 'noDrops' if old else 'noLootTable',
             'LIQUID_PROPS': 'BlockBehaviour.Properties.of().liquid().replaceable()' if tab else 'BlockBehaviour.Properties.of(Material.LAVA)',
-            'FLUID_PROPS': ('SOURCES.get(name), FLOWING.get(name), FluidAttributes.builder(new ResourceLocation("minecraft", "block/water_still"), new ResourceLocation("minecraft", "block/water_flow")).color(0xFF000000 | material.color()).temperature(material.temperature() + 273).density(2000).viscosity(10000).luminosity(10).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA)' if old else 'TYPES.get(name), SOURCES.get(name), FLOWING.get(name)'),
+            'METAL_TEXTURE': textures['metal'],
+            'ROCK_TEXTURE': textures['rock'],
+            'ROCK_FLUIDS': ', '.join(f'"{name}"' for name in ROCK_FLUIDS),
+            'FLUID_LOCALS': '    Catalog.Material material = Catalog.find(name);\n    FluidSprites textures = sprites(name);\n' if old else '',
+            'FLUID_PROPS': ('SOURCES.get(name), FLOWING.get(name), FluidAttributes.builder(textures.still(), textures.flowing()).color(0xFF000000 | material.color()).temperature(material.temperature() + 273).density(2000).viscosity(10000).luminosity(10).sound(SoundEvents.BUCKET_FILL_LAVA, SoundEvents.BUCKET_EMPTY_LAVA)' if old else 'TYPES.get(name), SOURCES.get(name), FLOWING.get(name)'),
         }
         if tab:
             values['FIELDS'] += '''

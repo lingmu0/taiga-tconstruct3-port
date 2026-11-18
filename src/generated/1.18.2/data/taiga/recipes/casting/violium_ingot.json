@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_violium",
+    "name": "taiga:molten_violium",
     "amount": 90
   },
   "result": {

@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_vibranium",
+    "name": "taiga:molten_vibranium",
     "amount": 90
   },
   "result": {

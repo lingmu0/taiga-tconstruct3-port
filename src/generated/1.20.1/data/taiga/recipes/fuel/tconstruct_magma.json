@@ -1,0 +1,10 @@
+{
+  "type": "tconstruct:melting_fuel",
+  "fluid": {
+    "tag": "forge:magma",
+    "amount": 250
+  },
+  "duration": 90,
+  "temperature": 1600,
+  "rate": 10
+}

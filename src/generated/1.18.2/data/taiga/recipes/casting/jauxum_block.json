@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_basin",
   "fluid": {
-    "fluid": "taiga:molten_jauxum",
+    "name": "taiga:molten_jauxum",
     "amount": 810
   },
   "result": {

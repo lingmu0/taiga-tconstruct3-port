@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:casting_table",
   "fluid": {
-    "fluid": "taiga:molten_dilithium",
+    "name": "taiga:molten_dilithium",
     "amount": 10
   },
   "result": {

@@ -2,15 +2,15 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "fluid": "tconstruct:molten_hepatizon",
+      "name": "tconstruct:molten_hepatizon",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_terrax",
+      "name": "taiga:molten_terrax",
       "amount": 180
     },
     {
-      "fluid": "taiga:molten_osram",
+      "name": "taiga:molten_osram",
       "amount": 90
     }
   ],
