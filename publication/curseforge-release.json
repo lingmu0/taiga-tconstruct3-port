@@ -1,29 +1,29 @@
 {
   "projectId": 1744942,
   "slug": "taiga-tconstruct3-port",
-  "version": "2.0.0-port.6",
-  "submittedDate": "2026-11-15",
+  "version": "2.0.0-port.7",
+  "submittedDate": "2026-11-18",
   "releaseType": "beta",
   "automaticReleaseAfterApproval": true,
   "projectModeration": "not checked after upload; see CurseForge author dashboard",
   "files": [
     {
       "minecraft": "1.18.2",
-      "fileName": "taiga-1.18.2-forge-2.0.0-port.6.jar",
-      "fileId": 9625697,
-      "sha256": "63dfbdb497b20174b40e73b2a16e29348352dfcea1e9d5227b48a53be88bca42"
+      "fileName": "taiga-1.18.2-forge-2.0.0-port.7.jar",
+      "fileId": 9683544,
+      "sha256": "44fbf9843e76174266e6194f70678542996e5e7a8ec5de72347695ab3be87ce3"
     },
     {
       "minecraft": "1.19.2",
-      "fileName": "taiga-1.19.2-forge-2.0.0-port.6.jar",
-      "fileId": 9625698,
-      "sha256": "106b39a38f34a6f15c0d44748cb04fa0e2a4427e4733c861eef0670cd19aea47"
+      "fileName": "taiga-1.19.2-forge-2.0.0-port.7.jar",
+      "fileId": 9683545,
+      "sha256": "985570bb4d74d787f44262c325e4644d417d5457077d68b0e3df61c4b34f5726"
     },
     {
       "minecraft": "1.20.1",
-      "fileName": "taiga-1.20.1-forge-2.0.0-port.6.jar",
-      "fileId": 9625701,
-      "sha256": "f9f3c48c4ed7f8b64493269e89c6cac17f7104967676871fda21c097d2d42666"
+      "fileName": "taiga-1.20.1-forge-2.0.0-port.7.jar",
+      "fileId": 9683548,
+      "sha256": "13595c6f871b30b1b43febac8a725ff4d68afce8a8e73aaefcab4745db437bec"
     }
   ]
 }
